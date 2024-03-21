@@ -19,7 +19,7 @@ eleventyNavigation:
     <!--                    LANDING                   -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
+    {# <section id="int-hero">
         <h1 id="home-h">About Us</h1>
         <picture>
             <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
@@ -27,49 +27,38 @@ eleventyNavigation:
             <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
         </picture>
 
-    </section>
+    </section> #}
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                 About Me                 -->
+<!-- ============================================ -->
 
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/projects" class="cs-button-solid">Our Projects</a>
-            </div>
+<section id="sbs-1308">
+    <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-image-group">
+            <!--Image-->
+            <picture class="cs-picture">
+                {# <source media="(max-width: 600px)" srcset="assets/images/avatar.png">
+                <source media="(min-width: 601px)" srcset="assets/images/avatar.png"> #}
+                <img loading="lazy" decoding="async" src="/assets/images/avatar.png" alt="avatar" width="630" height="630" aria-hidden="true">
+            </picture>
         </div>
-    </section>
+        <!-- Right Content Section-->
+        <div class="cs-content">
+            <span class="cs-topper">About Me</span>
+            <h2 class="cs-title">A little about myself</h2>
+            <p class="cs-text">
+                Hey there! I'm Nicolas Ortiz, a passionate web developer currently studying Interactive Media Design at Algonquin College. For me, web development isn't just a skill – it's a calling. I'm driven by a desire to craft websites that not only look stunning but also function flawlessly.
+            </p>
+            <p class="cs-text">
+                In my work, I'm devoted to delivering websites that exceed expectations. Every site I create achieves 100% page speed, accessibility, SEO, and best practices. Whether it's optimizing images or fine-tuning fonts, I prioritize user experience above all else.
+            </p>
+            <a class="cs-button-solid" aria-label="Contact me" href="/contact">Contact Me</a>
+        </div>
+    </div>
+</section>
+
 
     {% include 'components/cta.html' %}
 

@@ -1,0 +1,67 @@
+---
+title: 'Portfolio'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'portfolio/'
+eleventyNavigation:
+    key: Blog
+    order: 500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/blog.css">
+    <script src="/assets/js/portfolioQuote.js"></script>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+<!--                   Hero                       -->
+<!-- ============================================ -->
+<section id="quote-561">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Portfolio</span>
+            <p class="cs-quote">
+                Creating beautiful experiences tailored for people, where design is both seamless yet unforgettable. 
+            </p>
+        </div>
+    </div>
+</section>
+                                
+
+    <!-- ============================================ -->
+    <!--              Main Portfolio Content          -->
+    <!-- ============================================ -->
+
+    <section id="services-341">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Portfolio</span>
+                <h2 class="cs-title"> Online Portfolio Highlights</h2>
+            </div>
+            <ul class="cs-card-group">
+                {% if collections.post | length == 0 %}
+                    <li>No recent projects.</li>
+                {% else %}
+                    {%- for post in collections.post | reverse -%}
+                        <li class="cs-item">
+                            <a href="{{ post.url }}" class="cs-link">
+                                <picture class="cs-picture">
+                                    <source media="(max-width: 600px)" srcset="{{ post.data.image }}">
+                                    <source media="(min-width: 601px)" srcset="{{ post.data.image }}">
+                                    <img loading="lazy" decoding="async" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" width="413" height="240" aria-hidden="true">
+                                </picture>
+                                <h3 class="cs-h3">{{ post.data.title }}</h3>
+                                <p class="cs-item-text">{{ post.data.description | safe }}</p>
+                            </a>
+                        </li>
+                    {%- endfor -%}
+                {% endif %}
+            </ul>
+        </div>
+    </section>
+    {% include 'components/cta.html' %}
+{% endblock %}

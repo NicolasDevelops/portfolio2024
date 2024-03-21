@@ -1,27 +1,31 @@
 <!-- ============================================ -->
 <!--                Featured Posts                -->
 <!-- ============================================ -->
-
-<div class="blog-sidebar">
-  <!--Featured-->
-  <div class="blog-featured-group">
-    <span class="blog-header">Featured Posts</span>
-    {%- for post in collections.featured | reverse -%}
-      <a class="blog-feature" href="{{ post.url }}">
-        <picture class="blog-featureImage">
-          <img
-                    src="{{ post.data.image }}"
-                    alt="{{ post.data.imageAlt }}"
-                    width="60"
-                    height="60"
-                    decoding="async">
-        </picture>
-        <div class="content-group">
-          <h3 class="feature-h3">{{ post.data.title }}</h3>
-          <span class="feature-date">{{ post.date | postDate }}</span>
+  <section id="services-341">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Explore More</h2>
         </div>
-      </a>
-    {%- endfor -%}
-  </div>
-  <!--Add anything else in the sidebar below-->
+        <ul class="cs-card-group">
+            {% if collections.post | length == 0 %}
+                <li>No recent projects.</li>
+            {% else %}
+                {%- for post in collections.featured | reverse -%}
+                    <li class="cs-item">
+                        <a href="{{ post.url }}" class="cs-link">
+                            <picture class="cs-picture">
+                                <source media="(max-width: 600px)" srcset="{{ post.data.image }}">
+                                <source media="(min-width: 601px)" srcset="{{ post.data.image }}">
+                                <img loading="lazy" decoding="async" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" width="413" height="240" aria-hidden="true">
+                            </picture>
+                            <h3 class="cs-h3">{{ post.data.title }}</h3>
+                            <p class="cs-item-text">{{ post.data.description | safe }}</p>
+                        </a>
+                    </li>
+                {%- endfor -%}
+            {% endif %}
+        </ul>
+        <a class="cs-button-solid" aria-label="learn more about our programs" href="/portfolio">View All</a>
+    </div>
+</section>
 </div>
