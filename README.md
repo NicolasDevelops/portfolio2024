@@ -7,7 +7,7 @@
   <h3 align="center">Intermediate Starter Kit (LESS)</h3>
 
   <p align="center">
-    Introducing the official intermediate starter kit, presented by CodeStitch. This kit includes a pre-configured Eleventy setup that utilizes Nunjucks templating, along with a seamless integration of Decap CMS, providing an easy way to manage a blog. Everything is ready to go right from the start, offering a fantastic introduction to the advantages of a Static Site Generator, complete with LESS preprocessing.
+    Introducing the official intermediate starter kit, presented by CodeStitch. This kit includes a pre-configured Eleventy setup that utilizes Nunjucks templating, along with a seamless integration of Decap CMS, providing an easy way to manage a blog. Everything is ready to go right from the start, offering a fantastic introduction to the advantages of a Static Site Generator, complete with LESS preprocessing. Test
     <br/>
     <br/>
     <a href="https://github.com/CodeStitchOfficial/Intermediate-Website-Kit-SASS">SASS Starter Kit</a>
