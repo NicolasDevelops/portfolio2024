@@ -405,19 +405,19 @@ html hr {
     /* Delay for the first item */
   }
   #cs-navigation .cs-li:nth-child(4) {
-    transition-delay: 0.2s;
+    transition-delay: 0.12s;
     /* Delay for the second item */
   }
   #cs-navigation .cs-li:nth-child(3) {
-    transition-delay: 0.3s;
+    transition-delay: 0.14s;
     /* Delay for the third item */
   }
   #cs-navigation .cs-li:nth-child(2) {
-    transition-delay: 0.4s;
+    transition-delay: 0.16s;
     /* Delay for the second item */
   }
   #cs-navigation .cs-li:nth-child(1) {
-    transition-delay: 0.5s;
+    transition-delay: 0.18s;
     /* Delay for the third item */
   }
   #cs-navigation .cs-li-link {
