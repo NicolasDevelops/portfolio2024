@@ -23,13 +23,13 @@
 
         .cs-content {
             /* set text align to left if content needs to be left aligned */
-            text-align: left;
+            text-align: center;
             width: 100%;
             max-width: (542/16rem);
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
-            align-items: flex-start;
+            align-items: center;
             position: relative;
             z-index: 10;
         }
@@ -106,7 +106,7 @@
             font-size: clamp(1rem, 2.5vw, 1.9375rem);
             line-height: 1.2em;
             font-weight: 700;
-            text-align: inherit;
+            text-align: left;
             width: 100%;
             color: var(--bodyTextColorWhite);
             position: relative;
@@ -139,9 +139,7 @@
         .cs-content {
             width: 48%;
             padding: (48/16rem) 0;
-            align-self: center;
-            /* prevents flexbox from squishing it */
-            flex: none;
+            align-items: start;
         }
 
         .cs-image-group {
@@ -167,6 +165,9 @@
             left: auto;
             right: (130/16rem);
             transform: translateY(-50%);
+        }
+        .cs-text {
+            text-align: left;
         }
     }
 }

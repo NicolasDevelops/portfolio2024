@@ -21,13 +21,13 @@
   }
   #sbs-1308 .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: left;
+    text-align: center;
     width: 100%;
     max-width: 33.875rem;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
+    align-items: center;
     position: relative;
     z-index: 10;
   }
@@ -95,7 +95,7 @@
     font-size: clamp(1rem, 2.5vw, 1.9375rem);
     line-height: 1.2em;
     font-weight: 700;
-    text-align: inherit;
+    text-align: left;
     width: 100%;
     color: var(--bodyTextColorWhite);
     position: relative;
@@ -123,9 +123,7 @@
   #sbs-1308 .cs-content {
     width: 48%;
     padding: 3rem 0;
-    align-self: center;
-    /* prevents flexbox from squishing it */
-    flex: none;
+    align-items: start;
   }
   #sbs-1308 .cs-image-group {
     width: 55%;
@@ -147,5 +145,8 @@
     left: auto;
     right: 8.125rem;
     transform: translateY(-50%);
+  }
+  #sbs-1308 .cs-text {
+    text-align: left;
   }
 }

@@ -699,8 +699,8 @@ html hr {
     transform: scale(1.05);
   }
   #contact-strip-325 .cs-picture {
-    width: 5rem;
-    height: 5rem;
+    width: 3.75rem;
+    height: 3.75rem;
     /* 12px - 20px */
     margin-right: clamp(0.75rem, 3vw, 1.25rem);
     border-radius: 50%;
@@ -720,7 +720,7 @@ html hr {
     flex-direction: column;
   }
   #contact-strip-325 .cs-icon {
-    width: 2.0625rem;
+    width: 1.25rem;
     height: auto;
   }
   #contact-strip-325 .cs-header {
@@ -752,6 +752,13 @@ html hr {
     flex-wrap: wrap;
     column-gap: 1.25rem;
     row-gap: 2rem;
+  }
+  #contact-strip-325 .cs-picture {
+    width: 5rem;
+    height: 5rem;
+  }
+  #contact-strip-325 .cs-icon {
+    width: 2.125rem;
   }
 }
 /* Small Desktop - 1024px */
