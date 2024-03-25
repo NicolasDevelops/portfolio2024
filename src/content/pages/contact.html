@@ -65,7 +65,10 @@ permalink: 'contact/'
             </picture>
         </div>
         <!--Form-->
-        <form class="cs-form" id="cs-form-1441" name="Contact Form" method="post" netlify onSubmit="submit">
+        <form class="cs-form" id="cs-form-1441" name="Contact Form" method="post" netlify onSubmit="submit" netlify-honeypot="bot-field">
+                <label class="hidden">
+                    Don’t fill this out if you’re human: <input name="bot-field" />
+                </label>
             <label class="cs-label">
                 Name
                 <input class="cs-input" required type="text" id="name-1441" name="name" placeholder="Name">

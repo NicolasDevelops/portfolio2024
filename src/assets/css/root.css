@@ -10,6 +10,9 @@ html hr {
   margin: 50px 0;
   /* Adjust as needed */
 }
+.hidden {
+  display: none;
+}
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0em) {
   :root {
