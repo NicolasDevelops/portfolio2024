@@ -1,0 +1,34 @@
+---
+title: 'Success'
+description: 'Success page after submitting contact form.'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'success/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/success.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    SUCCESS                   -->
+    <!-- ============================================ -->
+
+    <section id="successPage">
+        <p class="success-message cs-topper">
+            Message submitted
+        </p>
+        <p class="success-message cs-title">
+            Thank you for reaching out! 
+        </p>
+        <a href="/" class="cs-button-solid submit-button">Return Home</a>
+    </section>
+
+<!-- ============================================ -->
+<!--                 SUCCESS              -->
+<!-- ============================================ -->
+
+
+{% endblock %}

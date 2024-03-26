@@ -1,7 +1,6 @@
 ---
 title: 'Portfolio'
 description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'portfolio/'
 eleventyNavigation:
     key: Blog
@@ -12,7 +11,6 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/blog.css">
-    <script src="/assets/js/portfolioQuote.js"></script>
 {% endblock %}
 
 {% block body %}
@@ -64,4 +62,5 @@ eleventyNavigation:
         </div>
     </section>
     {% include 'components/cta.html' %}
+    <script defer src="/assets/js/portfolioQuote.js"></script>
 {% endblock %}

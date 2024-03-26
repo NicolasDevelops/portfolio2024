@@ -1,6 +1,6 @@
 ---
-title: 'Pixel Perfect Websites'
-description: 'Meta description for the page'
+title: 'Nicolas Ortiz Develops | Web Development | Ottawa, ON'
+description: 'Nicolas Ortiz Web Development Portfolio Homepage'
 preloadImg: '/assets/images/landing.jpg'
 permalink: '/'
 eleventyNavigation:
@@ -11,9 +11,11 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css" />
     <link rel="stylesheet" href="/assets/css/critical.css" />
-    <script src="/assets/js/quote.js"></script>
+    <link rel="stylesheet" href="/assets/css/local.css" media="print" onload="this.media='all'; this.onload=null;" />
+    <noscript>
+    <link rel="stylesheet" href="/assets/css/local.css">
+    </noscript>
 
 
     <!-- Script for Netlify Identity -->
@@ -58,9 +60,9 @@ eleventyNavigation:
 
     <!-- Background Image -->
     <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/assets/images/blur2-m.png">
-        <source media="(min-width: 601px)" srcset="/assets/images/newblur.png">
-        <img loading="lazy" decoding="async" src="/assets/images/blur2.png" alt="field" width="1920" height="1200" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="/assets/images/landingBlur-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/landingBlur.webp">
+        <img loading="lazy" decoding="async" src="/assets/images/landingBlur.webp" alt="field" width="1920" height="1200" aria-hidden="true">
     </picture>
 </section> 
 
@@ -156,4 +158,5 @@ eleventyNavigation:
     </div>
 </section>
     {% include 'components/cta.html' %}
+    <script defer src="/assets/js/quote.js"></script>
 {% endblock %}
