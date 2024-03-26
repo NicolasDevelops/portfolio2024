@@ -307,7 +307,45 @@
 }
 
 /*-- -------------------------- -->
-<---  Individual Project Pages  -->
+<---  Individual Project HERO   -->
+<--- -------------------------- -*/
+
+// Mobile 0rem
+@media only screen and (min-width: 0rem) {
+
+    #int-hero {
+        min-height: 50vh;
+        border-radius: 0 0 20px 20px;
+        box-shadow: rgba(149, 157, 165, 1) 0px 8px 24px;
+        margin: auto;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        img {
+            border-radius: 0 0 20px 20px;
+        }
+        &:before {
+            display: none;
+        }
+    }
+}
+//  Desktop 64rem
+@media only screen and (min-width: 64rem) {
+
+    #int-hero {
+        min-height: 70vh;
+        margin-top: 150px;
+        margin-bottom: 100px;
+        max-width: clamp(90rem, 20vw, 100rem);
+        border-radius: 20px;
+        img {
+            border-radius: 20px;
+        }
+    }
+
+}
+
+/*-- -------------------------- -->
+<---  Individual Project (Interior))  -->
 <--- -------------------------- -*/
 
 @media only screen and (min-width: 0rem) {
@@ -360,34 +398,34 @@
         margin-bottom: 20px;
     }
 
-.content-text {
-    font-size: 16px;
-    line-height: 1.6;
-    color: var(--bodyTextColor);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    overflow-wrap: break-word;
-    /* Wrap long words */
-    word-wrap: break-word;
-    /* Fallback for older browsers */
-    max-width: 100%;
-    /* Ensure text doesn't exceed container width */
-}
+    .content-text {
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--bodyTextColor);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        overflow-wrap: break-word;
+        /* Wrap long words */
+        word-wrap: break-word;
+        /* Fallback for older browsers */
+        max-width: 100%;
+        /* Ensure text doesn't exceed container width */
+    }
 
-.content-text pre {
-    white-space: pre-wrap;
-    /* Preserve line breaks and wrap long lines */
-    word-wrap: break-word;
-    /* Break long words to prevent overflow */
-    background-color: #f4f4f4;
-    /* Optional: Add a background color to code blocks */
-    padding: 15px;
-    /* Optional: Add padding for better readability */
-    border-radius: 5px;
-    /* Optional: Add rounded corners */
-    overflow: auto;
-    /* Enable vertical scrolling if needed */
-}
+    .content-text pre {
+        white-space: pre-wrap;
+        /* Preserve line breaks and wrap long lines */
+        word-wrap: break-word;
+        /* Break long words to prevent overflow */
+        background-color: #f4f4f4;
+        /* Optional: Add a background color to code blocks */
+        padding: 15px;
+        /* Optional: Add padding for better readability */
+        border-radius: 5px;
+        /* Optional: Add rounded corners */
+        overflow: auto;
+        /* Enable vertical scrolling if needed */
+    }
 
     .content-text img {
         max-width: 100%;
@@ -410,53 +448,8 @@
     .blog-title {
         font-size: 2rem;
     }
+
     .blog-container {
         max-width: (1280/16rem);
     }
-}
-
-/*-- -------------------------- -->
-<---  Individual Project HERO   -->
-<--- -------------------------- -*/
-
-@media only screen and (min-width: 0rem) {
-
-    #int-hero {
-        min-height: 30vh;
-        border-radius: 20px;
-        box-shadow: rgba(149, 157, 165, 1) 0px 8px 24px;
-
-        &:before {
-            display: none;
-        }
-
-        margin: auto;
-        margin-top: 200px;
-        margin-bottom: 100px;
-        max-width: clamp(30rem, 20vw, 70rem);
-    }
-
-    #int-hero img {
-        border-radius: 20px;
-    }
-}
-
-@media only screen and (min-width: 48rem) {
-
-    #int-hero {
-        min-height: 50vh;
-        margin-top: 200px;
-        margin-bottom: 100px;
-        max-width: clamp(50rem, 20vw, 70rem);
-    }
-}
-@media only screen and (min-width: 64rem) {
-
-    #int-hero {
-        min-height: 70vh;
-        margin-top: 150px;
-        margin-bottom: 100px;
-        max-width: clamp(90rem, 20vw, 100rem);
-    }
-
 }

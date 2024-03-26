@@ -252,7 +252,38 @@
   }
 }
 /*-- -------------------------- -->
-<---  Individual Project Pages  -->
+<---  Individual Project HERO   -->
+<--- -------------------------- -*/
+@media only screen and (min-width: 0rem) {
+  #int-hero {
+    min-height: 50vh;
+    border-radius: 0 0 20px 20px;
+    box-shadow: #959da5 0px 8px 24px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  #int-hero img {
+    border-radius: 0 0 20px 20px;
+  }
+  #int-hero:before {
+    display: none;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  #int-hero {
+    min-height: 70vh;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    max-width: clamp(90rem, 20vw, 100rem);
+    border-radius: 20px;
+  }
+  #int-hero img {
+    border-radius: 20px;
+  }
+}
+/*-- -------------------------- -->
+<---  Individual Project (Interior))  -->
 <--- -------------------------- -*/
 @media only screen and (min-width: 0rem) {
   /* Updated styling for individual project pages */
@@ -344,41 +375,5 @@
   }
   .blog-container {
     max-width: 80rem;
-  }
-}
-/*-- -------------------------- -->
-<---  Individual Project HERO   -->
-<--- -------------------------- -*/
-@media only screen and (min-width: 0rem) {
-  #int-hero {
-    min-height: 30vh;
-    border-radius: 20px;
-    box-shadow: #959da5 0px 8px 24px;
-    margin: auto;
-    margin-top: 200px;
-    margin-bottom: 100px;
-    max-width: clamp(30rem, 20vw, 70rem);
-  }
-  #int-hero:before {
-    display: none;
-  }
-  #int-hero img {
-    border-radius: 20px;
-  }
-}
-@media only screen and (min-width: 48rem) {
-  #int-hero {
-    min-height: 50vh;
-    margin-top: 200px;
-    margin-bottom: 100px;
-    max-width: clamp(50rem, 20vw, 70rem);
-  }
-}
-@media only screen and (min-width: 64rem) {
-  #int-hero {
-    min-height: 70vh;
-    margin-top: 150px;
-    margin-bottom: 100px;
-    max-width: clamp(90rem, 20vw, 100rem);
   }
 }
