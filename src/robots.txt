@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Allow: /
 
-Sitemap: nicodevelops.netlify.app/sitemap.xml
+Sitemap: https://nicodevelops.netlify.app/sitemap.xml
