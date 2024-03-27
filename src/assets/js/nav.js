@@ -55,7 +55,13 @@ var navLinks = document.querySelectorAll('#cs-expanded .cs-li-link');
 navLinks.forEach(function (link) {
 	var href = link.getAttribute('href');
 	// Check if the current page is the home page
-	if (currentPageUrl.startsWith(href)) {
+	if (currentPageUrl === '/') {
+		if (href === '/' || href === 'index/') {
+			link.classList.add('cs-active');
+		} else {
+			link.classList.remove('cs-active');
+		}
+	} else if (currentPageUrl.startsWith(href)) {
 		// Add the cs-active class to the link if the current page URL starts with the link's href
 		link.classList.add('cs-active');
 	} else {
