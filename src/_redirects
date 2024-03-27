@@ -1,0 +1,7 @@
+# Redirect root to index.html
+/ /index.html 200
+
+# Rewrite to index.html
+/* /index.html 200
+
+/index.html  /  301

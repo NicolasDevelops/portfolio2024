@@ -556,11 +556,10 @@ html hr {
   }
   #cs-navigation .cs-li-link:hover {
     color: var(--primary);
-    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-size: clamp(1rem, 2vw, 1.05rem);
   }
   #cs-navigation .cs-li-link.cs-active {
     color: var(--primary);
-    font-weight: 800;
   }
   #cs-navigation .cs-button-solid {
     font-size: 0.8rem;
