@@ -46,8 +46,7 @@ html hr {
   .cs-title {
     font-family: "neue-montreal-medium", Arial, sans-serif;
     font-size: var(--headerFontSize);
-    font-weight: 900;
-    line-height: 86px;
+    line-height: 1.2em;
     letter-spacing: -0.2px;
     text-align: inherit;
     max-width: 43.75rem;
