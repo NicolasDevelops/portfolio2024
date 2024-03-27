@@ -64,21 +64,21 @@
         }
 
         .cs-title {
-            /* 31px - 61px */
-            font-size: clamp(1.9375rem, 4.4vw, 3.8125rem);
-            font-weight: 500;
-            line-height: 1.2em;
-            text-align: center;
-            max-width: (700/16rem);
-            /* 12px - 24px */
-            margin: 0 0 clamp(0.75rem, 1.5vw, 1.5rem);
+            font-family: "neue-montreal-medium", Arial, sans-serif;
+            font-size: var(--headerFontSize);
+            font-weight: 900;
+            line-height: 3rem;
+            letter-spacing: -.2px;
+            text-align: inherit;
+            max-width: 43.75rem;
+            margin: 0 0 1rem 0;
             color: var(--headerColor);
             position: relative;
         }
 
         .cs-text {
             /* 16px - 20px */
-            font-size: clamp(1rem, 2vw, 1.5625rem);
+            font-size: clamp(1.5rem, 2vw, 2rem);
             line-height: 1.5em;
             text-align: center;
             width: 100%;
@@ -129,6 +129,9 @@
 
 @media only screen and (min-width: 40rem) {
     #hero-1426 {
+        .cs-title {
+            line-height: 86px;
+        }
         .cs-text {
             font-size: clamp(1.5rem, 2vw, 1.5625rem);
         }

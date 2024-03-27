@@ -26,12 +26,13 @@ html hr {
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
-    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 72px);
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(4.75rem, 7.82vw, 20.25rem) 1rem;
   }
   .cs-topper {
+    font-family: "neue-montreal-medium", Arial, sans-serif;
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -43,9 +44,11 @@ html hr {
     display: block;
   }
   .cs-title {
+    font-family: "neue-montreal-medium", Arial, sans-serif;
     font-size: var(--headerFontSize);
     font-weight: 900;
-    line-height: 1.2em;
+    line-height: 86px;
+    letter-spacing: -0.2px;
     text-align: inherit;
     max-width: 43.75rem;
     margin: 0 0 1rem 0;
@@ -82,45 +85,45 @@ html hr {
 }
 /* Fonts and general styles */
 @media only screen and (min-width: 0em) {
-  /* roboto-regular - latin */
+  /* neue-montreal-thin */
   @font-face {
     font-style: normal;
-    font-family: "Roboto";
+    font-family: "neue-montreal-thin";
+    font-weight: 200;
+    font-display: swap;
+    src: local(""), url("/assets/fonts/NeueMontreal-Thin.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/NeueMontreal-Thin.woff") format("woff");
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* neue-montreal-regular */
+  @font-face {
+    font-style: normal;
+    font-family: "neue-montreal-regular";
     font-weight: 400;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-regular.woff") format("woff");
+    src: local(""), url("/assets/fonts/NeueMontreal-Regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/NeueMontreal-Regular.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  /* roboto-regular - latin */
+  /* neue-montreal-medium */
   @font-face {
     font-style: normal;
-    font-family: "Roboto";
-    font-weight: 500;
+    font-family: "neue-montreal-medium";
+    font-weight: 530;
     font-display: swap;
-    src: local(""), url("/assets/fonts/Roboto-Medium.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/Roboto-Medium.woff") format("woff");
+    src: local(""), url("/assets/fonts/NeueMontreal-Medium.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/NeueMontreal-Medium.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
-  /* roboto-700 - latin */
+  /* neue-montreal-bold */
   @font-face {
     font-style: normal;
-    font-family: "Roboto";
-    font-weight: 700;
+    font-family: "neue-montreal-bold";
+    font-weight: 800;
     font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-700.woff") format("woff");
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* roboto-900 - latin */
-  @font-face {
-    font-style: normal;
-    font-family: "Roboto";
-    font-weight: 900;
-    font-display: swap;
-    src: local(""), url("/assets/fonts/roboto-v29-latin-900.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/roboto-v29-latin-900.woff") format("woff");
+    src: local(""), url("/assets/fonts/NeueMontreal-Bold.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("/assets/fonts/NeueMontreal-Bold.woff") format("woff");
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   body,
   html {
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: "neue-montreal-regular", Arial, sans-serif;
     font-size: 100%;
     margin: 0;
     padding: 0;
@@ -439,10 +442,11 @@ html hr {
     color: var(--headerColor);
     display: inline-block;
     position: relative;
+    transition: color 0.3s ease;
   }
   #cs-navigation .cs-li-link.cs-active {
     color: var(--primary);
-    font-weight: bold;
+    font-family: neue-montreal-bold;
   }
   #cs-navigation .cs-li-link:hover {
     color: var(--primary);
@@ -556,7 +560,7 @@ html hr {
   }
   #cs-navigation .cs-li-link.cs-active {
     color: var(--primary);
-    font-weight: bold;
+    font-weight: 800;
   }
   #cs-navigation .cs-button-solid {
     font-size: 0.8rem;
