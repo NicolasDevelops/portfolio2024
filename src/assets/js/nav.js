@@ -55,7 +55,7 @@ var navLinks = document.querySelectorAll('#cs-expanded .cs-li-link');
 navLinks.forEach(function (link) {
 	var href = link.getAttribute('href');
 	// Check if the current page is the home page
-	if (currentPageUrl === '/') {
+	if (currentPageUrl === 'https://ortizwebworks.com') {
 		if (href === '/' || href === 'index/') {
 			link.classList.add('cs-active');
 		} else {
