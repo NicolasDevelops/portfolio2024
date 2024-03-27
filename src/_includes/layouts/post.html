@@ -21,7 +21,7 @@
     <!-- ============================================ -->
     <div class="blog-container">
         <div class="blog-header">
-            <h1 class="blog-title">{{ title }}</h1>
+            <h1 class="blog-title ">{{ title }}</h1>
             <div class="blog-author-info">
                 <img src="/assets/svgs/profile.svg" alt="Author" class="blog-author-img">
                 <span class="blog-author">{{ author }} | {{ date | postDate }} </span>
@@ -43,28 +43,3 @@
         {% include 'components/cta.html' %}
     </div>
 {% endblock %}
-
-    <!-- ============================================ -->
-    <!--              Main Blog Content               -->
-    <!-- ============================================ -->
-    {# <div class="blog-container main-content-wrapper">
-        <!--Main content -->
-        <div class="main-content">
-            <!-- ============================================ -->
-            <!--                Blog Article                  -->
-            <!-- ============================================ -->
-            <article class="blog-article">
-                <h1 class="blog-h1">{{ title }}</h1>
-                <div class="blog-authorGroup">
-                    <picture class="blog-author-img">
-                        <img src="/assets/svgs/profile.svg" alt="Author" width="32" height="32" decoding="async">
-                    </picture>
-                    <span class="blog-author">{{ author }}</span>
-                    <span aria-hidden="true" class="blog-dot"></span>
-                    <span class="blog-date">{{ date | postDate }}</span>
-                </div>
-                <section id="blog-content">
-                    {{ content | safe }}
-                </section>
-            </article>
-        </div> #}

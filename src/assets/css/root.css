@@ -243,6 +243,12 @@ html hr {
   body.cs-open {
     overflow: hidden;
   }
+  body.scroll #cs-navigation .cs-toggle {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  body.scroll #cs-navigation.cs-active .cs-toggle {
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
+  }
   #cs-navigation {
     width: 100%;
     max-width: 80rem;
@@ -261,6 +267,7 @@ html hr {
   }
   #cs-navigation.cs-active .cs-toggle {
     transform: rotate(180deg);
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2);
   }
   #cs-navigation.cs-active .cs-ul-wrapper {
     transform: translateX(0);
@@ -287,7 +294,7 @@ html hr {
     height: 4rem;
     background-color: #fff;
     border: none;
-    border-radius: 50px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,7 +305,7 @@ html hr {
     /* Adjust top positioning */
     right: 1.25rem;
     /* Adjust right positioning */
-    transition: transform 0.6s ease, border 0.3s ease, background 0.3s ease;
+    transition: transform 0.6s ease, border 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
   }
   #cs-navigation .cs-nav {
     /* sends it to the right in the 3rd position */
