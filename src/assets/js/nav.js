@@ -36,6 +36,7 @@ document.addEventListener('scroll', (e) => {
 	}
 });
 
+
 // mobile nav toggle code
 const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));
 for (const item of dropDowns) {
@@ -46,7 +47,7 @@ for (const item of dropDowns) {
 }
 
 // Get the current page URL
-var currentPageUrl = window.location.pathname;
+var currentPageUrl = window.location.href;
 
 // Get all navigation links
 var navLinks = document.querySelectorAll('#cs-expanded .cs-li-link');
@@ -54,18 +55,36 @@ var navLinks = document.querySelectorAll('#cs-expanded .cs-li-link');
 // Loop through each link
 navLinks.forEach(function (link) {
 	var href = link.getAttribute('href');
-	// Check if the current page is the home page
-	if (currentPageUrl === 'https://ortizwebworks.com') {
-		if (href === '/' || href === 'index/') {
-			link.classList.add('cs-active');
-		} else {
-			link.classList.remove('cs-active');
-		}
-	} else if (currentPageUrl.startsWith(href)) {
-		// Add the cs-active class to the link if the current page URL starts with the link's href
+
+	// Check if the current page URL contains the link's href
+	if (currentPageUrl.includes(href)) {
+		// Add the cs-active class to the link
 		link.classList.add('cs-active');
 	} else {
 		// Remove the cs-active class from the link if it doesn't match
 		link.classList.remove('cs-active');
 	}
 });
+
+// // Get the current page URL
+// var currentPageUrl = window.location.pathname;
+
+// // Get all navigation links
+// var navLinks = document.querySelectorAll('#cs-expanded .cs-li-link');
+
+// // Loop through each link
+// navLinks.forEach(function (link) {
+// 	var href = link.getAttribute('href');
+
+// 	// Check if the current page URL contains the link's href
+// 	if (currentPageUrl === '/' && href === '/index.html') {
+// 		// Add the cs-active class to the link
+// 		link.classList.add('cs-active');
+// 	} else if (currentPageUrl.startsWith(href)) {
+// 		// Add the cs-active class to the link
+// 		link.classList.add('cs-active');
+// 	} else {
+// 		// Remove the cs-active class from the link if it doesn't match
+// 		link.classList.remove('cs-active');
+// 	}
+// });
