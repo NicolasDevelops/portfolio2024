@@ -78,7 +78,9 @@
         }
 
         .cs-quote span {
-            color: var(--primary);
+            color: var(--bodyTextColorWhite);
+            font-weight: bold;
+            // font-family: neue-montreal-bold;
         }
 
         .cs-name {
@@ -103,6 +105,7 @@
 @media only screen and (min-width: 0rem) {
     #services-341 {
         padding: var(--sectionPadding);
+        padding-top: 0;
         background-color: #fff;
         .cs-button-solid {
             width: 10rem;
@@ -278,180 +281,180 @@
 <---           Stats            -->
 <--- -------------------------- -*/
 
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #stats-888 {
-        padding: var(--sectionPadding);
+// /* Mobile - 360px */
+// @media only screen and (min-width: 0rem) {
+//     #stats-888 {
+//         padding: var(--sectionPadding);
 
-        .cs-container {
-            width: 100%;
-            /* changes to 1280px at desktop */
-            max-width: (550/16rem);
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            /* 48px - 64px */
-            gap: clamp(3rem, 6vw, 4rem);
-        }
+//         .cs-container {
+//             width: 100%;
+//             /* changes to 1280px at desktop */
+//             max-width: (550/16rem);
+//             margin: auto;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: flex-start;
+//             /* 48px - 64px */
+//             gap: clamp(3rem, 6vw, 4rem);
+//         }
 
-        .cs-content {
-            /* set text align to left if content needs to be left aligned */
-            text-align: left;
-            width: 100%;
-            max-width: (542/16rem);
-            display: flex;
-            flex-direction: column;
-            /* centers content horizontally, set to flex-start to left align */
-            align-items: center;
-        }
+//         .cs-content {
+//             /* set text align to left if content needs to be left aligned */
+//             text-align: left;
+//             width: 100%;
+//             max-width: (542/16rem);
+//             display: flex;
+//             flex-direction: column;
+//             /* centers content horizontally, set to flex-start to left align */
+//             align-items: center;
+//         }
 
-        .cs-title {
-            text-align: center;
-        }
+//         .cs-title {
+//             text-align: center;
+//         }
 
-        .cs-text {
-            margin-bottom: (16/16rem);
-            text-align: center;
+//         .cs-text {
+//             margin-bottom: (16/16rem);
+//             text-align: center;
 
-            &:last-of-type {
-                margin-bottom: (32/16rem);
-            }
-        }
+//             &:last-of-type {
+//                 margin-bottom: (32/16rem);
+//             }
+//         }
 
-        .cs-button-solid {
-            font-size: (0.9rem);
-            /* 46px - 56px */
-            line-height: clamp(2.875em, 5.5vw, 3.5em);
-            text-decoration: none;
-            font-weight: 700;
-            color: #fff;
-            padding: 0 (32/14rem);
-            background-color: var(--primary);
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-            transition: background-color 0.3s;
-            border-radius: 5px;
+//         .cs-button-solid {
+//             font-size: (0.9rem);
+//             /* 46px - 56px */
+//             line-height: clamp(2.875em, 5.5vw, 3.5em);
+//             text-decoration: none;
+//             font-weight: 700;
+//             color: #fff;
+//             padding: 0 (32/14rem);
+//             background-color: var(--primary);
+//             display: inline-block;
+//             position: relative;
+//             z-index: 1;
+//             transition: background-color 0.3s;
+//             border-radius: 5px;
 
-            &:hover {
-                background-color: #000;
-            }
-        }
+//             &:hover {
+//                 background-color: #000;
+//             }
+//         }
 
-        .cs-card-group {
-            width: 100%;
-            max-width: (630/16rem);
-            margin: 0;
-            padding: 0;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            /* 16px - 20px */
-            gap: clamp(1rem, 2vw, 1.25rem);
-        }
+//         .cs-card-group {
+//             width: 100%;
+//             max-width: (630/16rem);
+//             margin: 0;
+//             padding: 0;
+//             display: grid;
+//             grid-template-columns: repeat(2, 1fr);
+//             /* 16px - 20px */
+//             gap: clamp(1rem, 2vw, 1.25rem);
+//         }
 
-        .cs-item {
-            text-align: center;
-            list-style: none;
-            /* changes at small desktop then again at large desktop */
-            width: 100%;
-            /* 44px - 60px */
-            padding: clamp(2.75rem, 5vw, 3.75rem) (32/16rem);
-            /* prevents padding and border from affecting height and width */
-            box-sizing: border-box;
-            /* clips cs-icon overflowing */
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            grid-column: span 2;
-            position: relative;
-            transition: scale 0.3s ease;
+//         .cs-item {
+//             text-align: center;
+//             list-style: none;
+//             /* changes at small desktop then again at large desktop */
+//             width: 100%;
+//             /* 44px - 60px */
+//             padding: clamp(2.75rem, 5vw, 3.75rem) (32/16rem);
+//             /* prevents padding and border from affecting height and width */
+//             box-sizing: border-box;
+//             /* clips cs-icon overflowing */
+//             overflow: hidden;
+//             display: flex;
+//             flex-direction: column;
+//             align-items: center;
+//             grid-column: span 2;
+//             position: relative;
+//             transition: scale 0.3s ease;
 
-            &:hover {
-                scale: 1.01;
-            }
+//             &:hover {
+//                 scale: 1.01;
+//             }
 
-            &:nth-of-type(1) {
-                background-color: var(--primary);
-                border-radius: 20px;
-            }
+//             &:nth-of-type(1) {
+//                 background-color: var(--primary);
+//                 border-radius: 20px;
+//             }
 
-            &:nth-of-type(4) {
-                background-color: black;
-                border-radius: 20px;
-            }
+//             &:nth-of-type(4) {
+//                 background-color: black;
+//                 border-radius: 20px;
+//             }
 
-            &:nth-of-type(2) {
-                background-color: black;
-                border-radius: 20px;
-            }
+//             &:nth-of-type(2) {
+//                 background-color: black;
+//                 border-radius: 20px;
+//             }
 
-            &:nth-of-type(3) {
-                background-color: var(--primary);
-                border-radius: 20px;
-            }
-        }
+//             &:nth-of-type(3) {
+//                 background-color: var(--primary);
+//                 border-radius: 20px;
+//             }
+//         }
 
-        .cs-number {
-            /* 39px - 49px */
-            font-size: clamp(2.4375rem, 6vw, 3.0625rem);
-            line-height: 1.2em;
-            text-align: inherit;
-            font-weight: 900;
-            margin: 0 0 (12/16rem) 0;
-            color: var(--bodyTextColorWhite);
-        }
+//         .cs-number {
+//             /* 39px - 49px */
+//             font-size: clamp(2.4375rem, 6vw, 3.0625rem);
+//             line-height: 1.2em;
+//             text-align: inherit;
+//             font-weight: 900;
+//             margin: 0 0 (12/16rem) 0;
+//             color: var(--bodyTextColorWhite);
+//         }
 
-        .cs-desc {
-            /* 16px -20px */
-            font-size: clamp(1rem, 2vw, 1.25rem);
-            line-height: 1.2em;
-            font-weight: 700;
-            text-align: inherit;
-            margin: 0;
-            color: white;
-        }
-    }
-}
+//         .cs-desc {
+//             /* 16px -20px */
+//             font-size: clamp(1rem, 2vw, 1.25rem);
+//             line-height: 1.2em;
+//             font-weight: 700;
+//             text-align: inherit;
+//             margin: 0;
+//             color: white;
+//         }
+//     }
+// }
 
-/* Tablet - 650px */
-@media only screen and (min-width: 40.625rem) {
-    #stats-888 {
-        .cs-item {
-            grid-column: span 1;
-            &:nth-of-type(1) {
-                background-color: var(--primary);
-            }
+// /* Tablet - 650px */
+// @media only screen and (min-width: 40.625rem) {
+//     #stats-888 {
+//         .cs-item {
+//             grid-column: span 1;
+//             &:nth-of-type(1) {
+//                 background-color: var(--primary);
+//             }
 
-            &:nth-of-type(2) {
-                background-color: black;
-            }
+//             &:nth-of-type(2) {
+//                 background-color: black;
+//             }
 
-            &:nth-of-type(3) {
-                background-color: black;
-            }
+//             &:nth-of-type(3) {
+//                 background-color: black;
+//             }
 
-            &:nth-of-type(4) {
-                background-color: var(--primary);
-            }
-        }
-    }
-}
+//             &:nth-of-type(4) {
+//                 background-color: var(--primary);
+//             }
+//         }
+//     }
+// }
 
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #stats-888 {
-        .cs-container {
-            max-width: (1280/16rem);
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-        }
+// /* Small Desktop - 1024px */
+// @media only screen and (min-width: 64rem) {
+//     #stats-888 {
+//         .cs-container {
+//             max-width: (1280/16rem);
+//             flex-direction: row;
+//             justify-content: space-between;
+//             align-items: center;
+//         }
 
-        .cs-content {
-            /* sends it to the right in the 2nd position */
-            order: 2;
-        }
-    }
-}
+//         .cs-content {
+//             /* sends it to the right in the 2nd position */
+//             order: 2;
+//         }
+//     }
+// }

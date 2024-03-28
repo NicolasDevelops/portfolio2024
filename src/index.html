@@ -44,11 +44,12 @@ permalink: '/index.html'
 <section id="hero-1426">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">web developer</span>
+            <h1 class="cs-title"> Creating exceptional digital experiences for clients worldwide.</h1>
+            {# <span class="cs-topper">web developer</span>
             <h1 class="cs-title">Nicolas Ortiz</h1>
             <p class="cs-text">
                 Creating digital experiences with passion and precision. Welcome to my portfolio.
-            </p>
+            </p> #}
             <div class="cs-button-group">
                 <a href="/contact" class="cs-button-solid cs-button">Contact Me</a>
                 <a href="/portfolio" class="cs-button-solid cs-button2">View Portfolio</a>
@@ -57,29 +58,12 @@ permalink: '/index.html'
     </div>
 
     <!-- Background Image -->
-    <picture class="cs-background">
+    {# <picture class="cs-background">
         <source media="(max-width: 600px)" srcset="/assets/images/landingBlur-m.webp">
         <source media="(min-width: 601px)" srcset="/assets/images/landingBlur.webp">
         <img loading="lazy" decoding="async" src="/assets/images/landingBlur.webp" alt="field" width="1200" height="496" aria-hidden="true">
-    </picture>
+    </picture> #}
 </section> 
-
-
-<!-- ============================================ -->
-<!--                   Quote                      -->
-<!-- ============================================ -->
-
-<section id="quote-561">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Quote</span>
-                <p class="cs-quote">
-                " In the digital age, your website is often the first point of contact between you and your potential customers. "<br><br><span>Make it count.</span>
-                </p>
-        </div>
-    </div>
-</section>
-                            
 
 <!-- ============================================ -->
 <!--                   Selected Projects                   -->
@@ -117,12 +101,11 @@ permalink: '/index.html'
     </div>
 </section>
 
-
 <!-- ============================================ -->
 <!--                    Stats                     -->
 <!-- ============================================ -->
 
-<section id="stats-888">
+{# <section id="stats-888">
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">My Mission</span>
@@ -154,7 +137,8 @@ permalink: '/index.html'
             </li>
         </ul>
     </div>
-</section>
+</section> #}
+
     {% include 'components/cta.html' %}
     <script defer src="/assets/js/quote.js"></script>
 {% endblock %}

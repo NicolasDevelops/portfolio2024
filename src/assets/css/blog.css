@@ -5,17 +5,8 @@
   body.scroll #cs-navigation .cs-toggle {
     background: #ffffff;
   }
-  body.scroll #cs-navigation .cs-line {
-    background: var(--primary);
-  }
   #cs-navigation .cs-toggle {
     background: transparent;
-  }
-  #cs-navigation .cs-line {
-    background: white;
-  }
-  #cs-navigation.cs-active .cs-line {
-    background: var(--primary);
   }
 }
 /*-- -------------------------- -->

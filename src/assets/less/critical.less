@@ -13,7 +13,7 @@
         overflow: hidden;
         z-index: 1;
         display: flex;
-        height: 98vh;
+        height: 80vh;
 
         .cs-background {
             width: 100%;
@@ -47,7 +47,10 @@
 
         .cs-content {
             width: 100%;
-            max-width: (630/16rem);
+            max-width: (400/16rem);
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
         }
 
         .cs-topper {
@@ -65,12 +68,11 @@
 
         .cs-title {
             font-family: "neue-montreal-medium", Arial, sans-serif;
-            font-size: var(--headerFontSize);
+            font-size: clamp(1.9375rem, 3.9vw, 4rem);
             font-weight: 900;
-            line-height: 3rem;
+            line-height: 1.3em;
             letter-spacing: -.2px;
             text-align: inherit;
-            max-width: 43.75rem;
             margin: 0 0 1rem 0;
             color: var(--headerColor);
             position: relative;
@@ -103,25 +105,27 @@
     font-weight: 700;
     color: #fff;
     padding: 0 (32/14rem);
-    background-color: var(--primary);
+    background-color: var(--headerColor);
     display: inline-block;
     position: relative;
     z-index: 1;
     transition: background-color 0.3s;
-    border-radius: 5px;
+    border-radius: 100px;
+    width: 11rem;
 
     &:hover {
-        background-color: #000;
+        background-color: #fff;
+        color: var(--headerColor);
     }
 }
         .cs-button2 {
-            background-color: transparent;
-            color: var(--primary);
-            transition: .3s ease color;
+            background-color: #fff;
+            color: var(--headerColor);
+            transition: .3s ease;
+            border: transparent solid 1px;
 
             &:hover {
-                background-color: transparent;
-                color: var(--headerColor);
+                border: var(--headerColor) solid 1px;
             }
         }
     }
@@ -129,8 +133,8 @@
 
 @media only screen and (min-width: 40rem) {
     #hero-1426 {
-        .cs-title {
-            line-height: 86px;
+        .cs-content {
+            max-width: (850/16rem);
         }
         .cs-text {
             font-size: clamp(1.5rem, 2vw, 1.5625rem);
