@@ -65,6 +65,7 @@ permalink: '/index.html'
     </picture> #}
 </section> 
 
+
 <!-- ============================================ -->
 <!--                   Selected Projects                   -->
 <!-- ============================================ -->
@@ -84,14 +85,13 @@ permalink: '/index.html'
             {% else %}
                 {%- for post in collections.featured | reverse -%}
                     <li class="cs-item">
-                        <a href="{{ post.url }}" class="cs-link">
                             <picture class="cs-picture">
                                 <source media="(max-width: 600px)" srcset="{{ post.data.image }}">
                                 <source media="(min-width: 601px)" srcset="{{ post.data.image }}">
                                 <img loading="lazy" decoding="async" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" width="413" height="240" aria-hidden="true">
                             </picture>
-                            <h3 class="cs-h3">{{ post.data.title }}</h3>
-                            <p class="cs-item-text">{{ post.data.description | safe }}</p>
+                            <h3 class="cs-item-text">{{ post.data.company }}</h3>
+                            {# <p class="cs-item-text">{{ post.data.description | safe }}</p> #}
                         </a>
                     </li>
                 {%- endfor -%}
@@ -138,6 +138,7 @@ permalink: '/index.html'
         </ul>
     </div>
 </section> #}
+
 
     {% include 'components/cta.html' %}
     <script defer src="/assets/js/quote.js"></script>

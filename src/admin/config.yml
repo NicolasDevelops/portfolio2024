@@ -19,8 +19,14 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
+      - { label: "Company", name: "company", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Technologies", name: "technologies", widget: "list", allow_add: true, allow_delete: true, collapsed: false, field: { label_singular: "Technology", hint: "Add a technology", name: "technology", widget: "string" } }
+      - { label: "Overview", name: "overview", widget: "string" }
+      - { label: "Web link", hint: "Format: https://www.website,com", name: "webLink", widget: "string", pattern: ["^(?:https?://)?(?:www\\.)?[\\w-]+\\.[\\w]{2,3}(?:/[^\\s]*)?$", "Invalid URL format"]}
       - { label: "Date", name: "date", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image Caption", name: "imageAlt", widget: "string" }
+      - { label: "Body Images", name: "bodyImages", widget: "list", field: { label: "Image", name: "image", widget: "image" } }
       - { label: "Body", name: "body", widget: "markdown" }

@@ -26,13 +26,12 @@ permalink: 'portfolio/'
         </div>
     </div>
 </section> #}
-
+{# Quote #}
 <section id="quote-561">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-quote-topper">Quote</span>
                 <p class="cs-quote">
-                In the digital age, your website is often the first point of contact between you and your potential customers,<br><br><span>Make it count.</span>
+                In the digital age, your website is often the first point of contact between you and your potential customers.<br><br><span>Make it count.</span>
                 </p>
         </div>
     </div>
@@ -61,8 +60,7 @@ permalink: 'portfolio/'
                                     <source media="(min-width: 601px)" srcset="{{ post.data.image }}">
                                     <img loading="lazy" decoding="async" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" width="413" height="240" aria-hidden="true">
                                 </picture>
-                                <h3 class="cs-h3">{{ post.data.title }}</h3>
-                                <p class="cs-item-text">{{ post.data.description | safe }}</p>
+                                <h3 class="cs-item-text">{{ post.data.company }}</h3>
                             </a>
                         </li>
                     {%- endfor -%}

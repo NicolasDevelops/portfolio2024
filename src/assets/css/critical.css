@@ -94,14 +94,14 @@
     text-decoration: none;
     font-weight: 700;
     color: #fff;
-    padding: 0 2.28571429rem;
+    padding: 0 2.14285714rem;
     background-color: var(--headerColor);
     display: inline-block;
     position: relative;
     z-index: 1;
     transition: background-color 0.3s;
     border-radius: 100px;
-    width: 11rem;
+    width: 10rem;
   }
   #hero-1426 .cs-button-solid:hover {
     background-color: #fff;
@@ -123,5 +123,9 @@
   }
   #hero-1426 .cs-text {
     font-size: clamp(1.5rem, 2vw, 1.5625rem);
+  }
+  #hero-1426 .cs-button-solid {
+    padding: 0 2.28571429rem;
+    width: 11rem;
   }
 }

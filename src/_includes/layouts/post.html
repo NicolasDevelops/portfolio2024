@@ -7,30 +7,57 @@
 {% block body %}
     <!-- ============================================ -->
     <!--                    HERO                      -->
-    <!-- ============================================ -->
-    <section id="int-hero">
-        <picture>
-            <source media="(max-width: 600px)" srcset="{{ image }}">
-            <source media="(min-width: 601px)" srcset="{{ image }}">
-            <img aria-hidden="true" decoding="async" src="{{ image }}" alt="{{ imageAlt }}" loading="eager" width="100%" height="auto">
-        </picture>
-    </section>
+    <!-- ============================================ --
 
     <!-- ============================================ -->
     <!--              Main Blog Content               -->
     <!-- ============================================ -->
-    <div class="blog-container">
+    <div id="blog-content" class="blog-container">
         <div class="blog-header">
-            <h1 class="blog-title ">{{ title }}</h1>
             <div class="blog-author-info">
-                <img src="/assets/svgs/profile.svg" alt="Author" class="blog-author-img">
-                <span class="blog-author">{{ author }} | {{ date | postDate }} </span>
+                <span class="cs-topper">{{ date | postDate }} </span>
             </div>
-            {# Divider Line #}
-            <hr>
+            <h1 class="cs-title">{{ title }}</h1>
+        </div>
+        <section id="int-hero">
+            <picture>
+                <source media="(max-width: 600px)" srcset="{{ image }}">
+                <source media="(min-width: 601px)" srcset="{{ image }}">
+                <img aria-hidden="true" decoding="async" src="{{ image }}" alt="{{ imageAlt }}" loading="eager" width="100%" height="auto">
+            </picture>
+        </section>
+        <ul class="projectInfo">
+            <li class="cs-li cs-link">
+                <p class="cs-text cs-text-topper">Company</p>
+                <p class="cs-text">{{ company }}</p>
+            </li>
+            <li class="cs-li cs-link">
+                <p class="cs-text cs-text-topper">Role</p>
+                <p class="cs-text">{{ role }}</p>
+            </li>
+            <li class="cs-li cs-link">
+                <p class="cs-text cs-text-topper">Technology</p>
+                <p class="cs-text">{% for technology in technologies %} {{ technology }}{% if not loop.last %}, {% endif %}
+        {% endfor %}
+                </p>
+            </li>
+            <li class="cs-li cs-link">
+                <p class="cs-text cs-text-topper">Website</p>
+                <a class="cs-text" target="_blank" href="{{ webLink }}">{{ webLink }}</a>
+            </li>
+        </ul>
+        <div class="content-overview">
+            <p class="cs-text cs-text-topper">Overview</p>
+            <p class="cs-text">{{ overview }}</p>
         </div>
         <div class="blog-content">
-            {# <img src="{{ image }}" alt="{{ imageAlt }}" class="featured-image"> #}
+            {% for image in bodyImages %}
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="{{ image }}">
+                    <source media="(min-width: 601px)" srcset="{{ image }}">
+                    <img loading="lazy" decoding="async" src="{{ image }}" alt="{{ imageAlt }}" width="413" height="240" aria-hidden="true">
+                </picture>
+            {% endfor %}
             <div class="content-text">
                 {{ content | safe }}
             </div>

@@ -1,89 +1,4 @@
 /*-- -------------------------- -->
-<---           Quote            -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #quote-561 {
-    padding: var(--sectionPadding);
-    background-color: black;
-    /* Animate the quote in when scrolled into view */
-  }
-  #quote-561 .cs-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #quote-561 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: left;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
-    /* 16px - 20px */
-    gap: clamp(1rem, 2vw, 1.25rem);
-  }
-  #quote-561 .cs-topper {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 2vw, 1.25rem);
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: inherit;
-    letter-spacing: 0.1em;
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 0.25rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  #quote-561 .cs-topper:before {
-    /* orange line */
-    content: "";
-    width: 3.125rem;
-    height: 2px;
-    background: var(--primary);
-    opacity: 1;
-    display: block;
-  }
-  #quote-561 .cs-quote {
-    /* 31px - 49px */
-    font-size: clamp(1.9375rem, 5.1vw, 3.0625rem);
-    line-height: 1.2em;
-    font-family: "neue-montreal-medium", Arial, sans-serif;
-    letter-spacing: -0.2px;
-    margin: 0;
-    color: var(--bodyTextColorWhite);
-    opacity: 0;
-    transition: opacity 1.5s ease;
-  }
-  #quote-561 .cs-quote.animate-in {
-    opacity: 1;
-  }
-  #quote-561 .cs-quote span {
-    color: var(--bodyTextColorWhite);
-    font-weight: bold;
-  }
-  #quote-561 .cs-name {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 1.7vw, 1.25rem);
-    line-height: 1.2em;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin: 0;
-    color: var(--primary);
-    display: block;
-    letter-spacing: 0.01em;
-  }
-}
-/*-- -------------------------- -->
 <---         Services           -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
@@ -92,6 +7,9 @@
     padding: var(--sectionPadding);
     padding-top: 0;
     background-color: #fff;
+  }
+  #services-341 .cs-text {
+    text-align: center;
   }
   #services-341 .cs-button-solid {
     width: 10rem;
@@ -108,7 +26,7 @@
     gap: clamp(3rem, 6vw, 4rem);
   }
   #services-341 .cs-content {
-    text-align: center;
+    text-align: start;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -132,7 +50,6 @@
     border-radius: 20px;
     position: relative;
     z-index: 1;
-    box-shadow: rgba(149, 157, 165, 0.245) 0px 8px 24px;
   }
   .cs-link {
     text-decoration: none;
@@ -164,22 +81,18 @@
   .cs-h3 {
     font-size: 1.25rem;
     line-height: 1.2em;
-    text-align: inherit;
-    font-weight: lighter;
+    font-family: "neue-montreal-regular";
     margin: 0;
     color: var(--headerColor);
     padding: 1rem;
-    text-align: center;
     transition: color 0.3s;
   }
   .cs-item-text {
     font-size: 1rem;
     line-height: 1.5em;
-    text-align: inherit;
     margin: 0;
     color: var(--bodyTextColor);
-    padding: 0rem 1rem 1rem;
-    text-align: center;
+    padding: 1rem 0;
     opacity: 1;
     transition: opacity 0.8s;
     white-space: nowrap;
@@ -203,11 +116,27 @@
   .cs-item {
     width: calc(33.3333% - 1.33333rem);
   }
-  .cs-picture {
+  .cs-picture img {
     border-radius: 20px;
+    filter: blur(0) brightness(1);
+    transition: filter 1.3s ease;
   }
   .cs-item-text {
+    color: var(--bodyTextColorWhite);
+    font-size: var(--topperFontSize);
+    font-family: neue-montreal-regular;
+    position: absolute;
+    margin: 1rem 1rem;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
     opacity: 0;
+    transition: 0.5s ease;
+    z-index: 10;
+    background-color: rgba(232, 229, 228, 0.5);
+    border-radius: 100px;
+    letter-spacing: 1px;
+    padding: 0.5rem 1rem;
   }
   #services-341 .cs-item {
     list-style: none;
@@ -216,24 +145,18 @@
     border-radius: 20px;
     position: relative;
     z-index: 1;
-    box-shadow: none;
-    transition: box-shadow 0.3s, transform 0.3s;
+    transition: transform 0.3s ease;
   }
   #services-341 .cs-item:hover {
-    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 12px;
     transform: translateY(-0.4375rem);
   }
   #services-341 .cs-item:hover .cs-picture img {
     transform: scale(1.1);
+    filter: blur(5px) brightness(0.5);
   }
   #services-341 .cs-item:hover .cs-item-text {
     opacity: 1;
-  }
-  #services-341 .cs-item:hover .cs-h3 {
-    color: var(--primary);
-  }
-  #services-341 .cs-item:hover .cs-picture {
-    border-radius: 20px 20px 0 0;
   }
 }
 /*-- -------------------------- -->

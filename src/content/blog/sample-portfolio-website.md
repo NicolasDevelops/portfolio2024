@@ -1,8 +1,17 @@
 ---
+author: Nicolas Ortiz
+technologies:
+  - HTML5
+  - CSS3
+  - Javascript
+client: Samsung
 title: Sample Portfolio Website
 description: First website portfolio
-author: Nicolas Ortiz
-date: 2024-03-19T22:50:04.832Z
+company: Ortiz Web Works
+role: Web Developer
+overview: test
+weblink: https://www.google.com
+date: 2024-03-28T21:23:19.816Z
 tags:
   - featured
 image: /assets/images/blog/portfolio-background.png
