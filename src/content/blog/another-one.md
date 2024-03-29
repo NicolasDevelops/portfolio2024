@@ -7,7 +7,7 @@ technologies:
   - CSS3
   - Javascript
 weblink: https://www.apple.com
-title: Some website I built.
+title: Tap into your untapped innovation
 description: description
 company: Samsung
 role: Web Developer
@@ -28,5 +28,7 @@ bodyImages:
   - https://picsum.photos/1920/1080
   - https://picsum.photos/1920/1080
   - https://picsum.photos/1920/1080
+  - /assets/images/blog/landing.jpg
+  - /assets/images/blog/portfolio-background.png
 ---
 Test

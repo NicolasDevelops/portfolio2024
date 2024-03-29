@@ -1,9 +1,10 @@
 <!-- ============================================ -->
 <!--                Featured Posts                -->
 <!-- ============================================ -->
-  <section id="services-341">
+<section id="services-explore">
     <div class="cs-container">
         <div class="cs-content">
+            <span class="cs-topper">Portfolio</span>
             <h2 class="cs-title">Explore More</h2>
         </div>
         <ul class="cs-card-group">
@@ -18,14 +19,13 @@
                                 <source media="(min-width: 601px)" srcset="{{ post.data.image }}">
                                 <img loading="lazy" decoding="async" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" width="413" height="240" aria-hidden="true">
                             </picture>
-                            <h3 class="cs-h3">{{ post.data.title }}</h3>
-                            <p class="cs-item-text">{{ post.data.description | safe }}</p>
+                            <h3 class="cs-item-text">{{ post.data.company }}</h3>
+                            {# <p class="cs-item-text">{{ post.data.description | safe }}</p> #}
                         </a>
                     </li>
                 {%- endfor -%}
             {% endif %}
         </ul>
-        <a class="cs-button-solid" aria-label="learn more about our programs" href="/portfolio">View All</a>
+        <a class="cs-button-solid" aria-label="VIew all of my projects" href="/portfolio">View All</a>
     </div>
 </section>
-</div>

@@ -12,59 +12,75 @@
     <!-- ============================================ -->
     <!--              Main Blog Content               -->
     <!-- ============================================ -->
-    <div id="blog-content" class="blog-container">
-        <div class="blog-header">
-            <div class="blog-author-info">
-                <span class="cs-topper">{{ date | postDate }} </span>
-            </div>
-            <h1 class="cs-title">{{ title }}</h1>
+<div id="blog-content" class="blog-container">
+    <div class="blog-header">
+        <div class="blog-author-info">
+            <span class="cs-topper">{{ date | postDate }} </span>
         </div>
-        <section id="int-hero">
-            <picture>
-                <source media="(max-width: 600px)" srcset="{{ image }}">
-                <source media="(min-width: 601px)" srcset="{{ image }}">
-                <img aria-hidden="true" decoding="async" src="{{ image }}" alt="{{ imageAlt }}" loading="eager" width="100%" height="auto">
-            </picture>
-        </section>
-        <ul class="projectInfo">
-            <li class="cs-li cs-link">
-                <p class="cs-text cs-text-topper">Company</p>
-                <p class="cs-text">{{ company }}</p>
-            </li>
-            <li class="cs-li cs-link">
-                <p class="cs-text cs-text-topper">Role</p>
-                <p class="cs-text">{{ role }}</p>
-            </li>
-            <li class="cs-li cs-link">
-                <p class="cs-text cs-text-topper">Technology</p>
-                <p class="cs-text">{% for technology in technologies %} {{ technology }}{% if not loop.last %}, {% endif %}
-        {% endfor %}
-                </p>
-            </li>
-            <li class="cs-li cs-link">
-                <p class="cs-text cs-text-topper">Website</p>
-                <a class="cs-text" target="_blank" href="{{ webLink }}">{{ webLink }}</a>
-            </li>
-        </ul>
-        <div class="content-overview">
-            <p class="cs-text cs-text-topper">Overview</p>
-            <p class="cs-text">{{ overview }}</p>
-        </div>
-        <div class="blog-content">
-            {% for image in bodyImages %}
-                <picture class="cs-picture">
-                    <source media="(max-width: 600px)" srcset="{{ image }}">
-                    <source media="(min-width: 601px)" srcset="{{ image }}">
-                    <img loading="lazy" decoding="async" src="{{ image }}" alt="{{ imageAlt }}" width="413" height="240" aria-hidden="true">
-                </picture>
-            {% endfor %}
-            <div class="content-text">
-                {{ content | safe }}
-            </div>
-        </div>
+        <h1 class="cs-title">{{ title }}</h1>
     </div>
+    <section id="int-hero">
+        <picture>
+            <source media="(max-width: 600px)" srcset="{{ image }}">
+            <source media="(min-width: 601px)" srcset="{{ image }}">
+            <img aria-hidden="true" decoding="async" src="{{ image }}" alt="{{ imageAlt }}" loading="eager" width="100%" height="auto">
+        </picture>
+    </section>
+    <ul class="projectInfo">
+        <li class="cs-li cs-link">
+            <p class="cs-text cs-text-topper">Company</p>
+            <p class="cs-text">{{ company }}</p>
+        </li>
+        <li class="cs-li cs-link">
+            <p class="cs-text cs-text-topper">Role</p>
+            <p class="cs-text">{{ role }}</p>
+        </li>
+        <li class="cs-li cs-link">
+            <p class="cs-text cs-text-topper">Technology</p>
+            <p class="cs-text">{% for technology in technologies %} {{ technology }}{% if not loop.last %}, {% endif %}
+    {% endfor %}
+            </p>
+        </li>
+        <li class="cs-li cs-link">
+            <p class="cs-text cs-text-topper">Website</p>
+            <a class="cs-text" target="_blank" href="{{ webLink }}">{{ webLink }}</a>
+        </li>
+    </ul>
+    <hr>
+    <div class="content-overview">
+        <p class="cs-text cs-text-topper">Overview</p>
+        <p class="cs-text">{{ overview }}</p>
+    </div> 
+    <hr>
+    <section id="gallery-1446">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="cs-flex">
+                    <span class="cs-text cs-text-topper">Gallery</span>
+                    <h2 class="cs-title">Our Photo Gallery</h2>
+                </div>
+            </div>
+            <!--Gallery-->
+            <div class="cs-gallery">
+                <!--Pictures-->
+                {% for image in bodyImages %}
+                    <div class="cs-image">
+                        <img loading="lazy" decoding="async" src="{{ image }}" alt="{{ imageAlt }}">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+</div>
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+
+    
     {# Diviner Line #}
     <hr>
+    
 
         {% include 'components/featured-post.html' %}
         {% include 'components/cta.html' %}
