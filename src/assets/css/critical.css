@@ -101,7 +101,7 @@
     z-index: 1;
     transition: background-color 0.3s;
     border-radius: 100px;
-    width: 10rem;
+    width: 11rem;
   }
   #hero-1426 .cs-button-solid:hover {
     background-color: #fff;
