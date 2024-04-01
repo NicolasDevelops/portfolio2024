@@ -99,6 +99,9 @@
   #services-341 .cs-text {
     text-align: center;
   }
+  #services-341 .cs-title {
+    text-align: center;
+  }
   #services-341 .cs-button-solid {
     width: 10rem;
     text-align: center;
@@ -284,6 +287,9 @@
     margin: 0 auto;
     padding: 20px;
   }
+  #blog-content .cs-text-topper {
+    color: #808080;
+  }
   #blog-content .blog-header {
     text-align: center;
     height: 75vh;
@@ -335,9 +341,6 @@
   #blog-content .projectInfo li {
     padding-top: 1rem;
   }
-  #blog-content .projectInfo li .cs-text-topper {
-    color: #808080;
-  }
   #blog-content .projectInfo li:first-child {
     padding: 0;
   }
@@ -370,6 +373,7 @@
   }
   #blog-content .cs-text-topper {
     padding-bottom: 1rem;
+    color: #808080;
   }
 }
 /*-- -------------------------- -->

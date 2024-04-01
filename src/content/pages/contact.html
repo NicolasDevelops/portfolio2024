@@ -13,81 +13,71 @@ permalink: 'contact/'
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
-
-
-
-
-    <!-- ============================================ -->
-<!--                   Contact                    -->
+<!-- ============================================ -->
+<!--                Contact Form                  -->
 <!-- ============================================ -->
 
-<section id="contact-1441">
+<section id="cs-contact-490">
     <div class="cs-container">
+        <!-- Contact Info -->
         <div class="cs-content">
-            <span class="cs-topper">Contact Me</span>
-            <h2 class="cs-title">Let's work Together.</h2>
-        </div>
-        <div class="cs-contact-group">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Contact Information</h2>
             <p class="cs-text">
-                There are many variations of passages of available but the majority have suffered alteration in some form, by injected randomized words even slightly believable.
+                Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Eu volutpat odio facilisis mauris sit amet massa. Sit amet est placerat in egestas
             </p>
-            <ul class="cs-ul">
-                <li class="cs-li">
-                    <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="/assets/svgs/phoneWhite.svg" alt="phone icon" class="cs-icon" width="40" height="40" decoding="async">
-                    </picture>
-                    <div class="cs-flex-group">
-                        <span class="cs-header">Phone</span>
-                        <a href="tel:888-4565-789
-                        " class="cs-link">+1 (819) 904 0728
-                        </a>
-                    </div>
-                </li>
-                <li class="cs-li">
-                    <picture class="cs-icon-wrapper">
-                        <img aria-hidden="true" src="/assets/svgs/inboxWhite.svg" alt="address icon" class="cs-icon" width="40" height="40" decoding="async">
-                    </picture>
-                    <div class="cs-flex-group">
-                        <span class="cs-header">Email</span>
-                        <a href="mailto:nicolasortiz.dev@hotmail.com" class="cs-link">NicolasOrtiz.Dev@hotmail.com</a>
-                    </div>
-                </li>
-            </ul>
-            <picture class="cs-background">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/wind-turbine.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/wind-turbine.jpg">
-                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Landscapes/wind-turbine.jpg" alt="wind turbine" width="650" height="613">
-            </picture>
+            
+            <!--Address-->
+            <span class="cs-header">Address</span>
+            <a href="" class="cs-link">
+                PO Box 15252 Mill Creek, <br>Washington, USA 98082
+            </a>
+            <!--Email-->
+            <span class="cs-header">Email</span>
+            <a href="mailtp:info@iabuyer.com" class="cs-link">info@iabuyer.com</a>
+            <!--Phone-->
+            <span class="cs-header">Phone</span>
+            <a href="tel:425-686-9566" class="cs-link">(425) 686-9566</a>
+
+            <!--Social Buttons-->
+            <div class="cs-social">
+                <a class="cs-social-link" aria-label="visit google profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                </a>
+                <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                </a>
+            </div>
         </div>
-        <!--Form-->
-        <form class="cs-form" id="cs-form-1441" name="Contact Form" method="post" netlify onSubmit="submit" netlify-honeypot="bot-field" action="/success/">
-                <label class="hidden">
-                    Don’t fill this out if you’re human: <input name="bot-field" />
-                </label>
+        <!-- Form -->
+        <form id="cs-form-490" name="Contact Form" method="post">
             <label class="cs-label">
                 Name
-                <input class="cs-input" required type="text" id="name-1441" name="name" placeholder="Name">
-            </label>
-            <label class="cs-label cs-email">
-                Email
-                <input class="cs-input" required type="email" id="email-1441" name="email" placeholder="Email">
-            </label>
-            <label class="cs-label cs-phone">
-                Phone
-                <input class="cs-input" type="number" id="phone-1441" name="phone" placeholder="Phone">
+                <input class="cs-input" required type="text" id="name-490" name="name" placeholder="John/Jane Doe">
             </label>
             <label class="cs-label">
-                Message
-                <textarea class="cs-input cs-textarea" required name="Message" id="message-1441" placeholder="Write message..."></textarea>
+                Email
+                <input class="cs-input" required type="text" id="email-490" name="email" placeholder="name@company.com">
             </label>
-            <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+            <label class="cs-label">
+                Phone
+                <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="+1 (206) 987-6543">
+            </label>
+            <label class="cs-label">
+                How Did You Find Us
+                <input class="cs-input" type="text" id="find-490" name="find-us" placeholder="Social Media, Family, Friend...">
+            </label>
+            <label class="cs-label -label-message">
+                Message
+                <textarea class="cs-input" required name="Message" id="message-490" placeholder="Hello, I’m interested in..."></textarea>
+            </label>
+            <button class="cs-button-solid" type="submit">Submit Message Now</button>
         </form>
     </div>
 </section>
+                                
 {% include 'components/cta.html' %}
 {% endblock %}
