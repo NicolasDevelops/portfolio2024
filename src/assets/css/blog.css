@@ -251,30 +251,27 @@
   }
 }
 /*-- -------------------------- -->
-<---  Individual Project HERO   -->
+<---  Individual Project Hero Picture   -->
 <--- -------------------------- -*/
 @media only screen and (min-width: 0rem) {
-  #int-hero {
-    min-height: 50vh;
+  #img-hero {
     border-radius: 10px;
     box-shadow: none;
     margin: auto;
   }
-  #int-hero img {
+  #img-hero img {
     border-radius: 15px;
   }
-  #int-hero:before {
+  #img-hero:before {
     display: none;
   }
 }
 @media only screen and (min-width: 64rem) {
-  #int-hero {
-    min-height: 70vh;
-    margin-top: 150px;
+  #img-hero {
     max-width: clamp(90rem, 20vw, 100rem);
     border-radius: 15px;
   }
-  #int-hero img {
+  #img-hero img {
     border-radius: 15px;
   }
 }
@@ -282,68 +279,82 @@
 <---  Individual Project (Interior))  -->
 <--- -------------------------- -*/
 @media only screen and (min-width: 0rem) {
-  /* Updated styling for individual project pages */
-  .blog-container {
+  #blog-content .cs-container {
     max-width: 37.5rem;
     margin: 0 auto;
     padding: 20px;
   }
-  .blog-header {
+  #blog-content .blog-header {
     text-align: center;
-    height: 70vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: var(--sectionPadding);
+    padding-left: 0;
+    padding-right: 0;
   }
-  .blog-title {
+  #blog-content .blog-title {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 10px;
   }
-  .blog-author-info {
+  #blog-content .blog-author-info {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
   }
-  .blog-author {
+  #blog-content .blog-author {
     background: rgba(232, 229, 228, 0.5);
     border-radius: 100px;
   }
-  .blog-author-img {
+  #blog-content .blog-author-img {
     width: 32px;
     height: 32px;
     border-radius: 50%;
     margin-right: 15px;
   }
-  .blog-author,
-  .blog-date {
+  #blog-content .blog-author,
+  #blog-content .blog-date {
     font-size: 0.9rem;
     color: #666;
   }
-  .blog-content {
+  #blog-content .blog-content {
     margin-top: 20px;
   }
-  .featured-image {
+  #blog-content .featured-image {
     width: 100%;
     border: 1px solid #ddd;
     border-radius: 10px;
     margin-bottom: 20px;
   }
+  #blog-content .projectInfo {
+    padding-top: 50px;
+  }
+  #blog-content .projectInfo li {
+    padding-top: 1rem;
+  }
+  #blog-content .projectInfo li .cs-text-topper {
+    color: #808080;
+  }
+  #blog-content .projectInfo li:first-child {
+    padding: 0;
+  }
 }
 @media only screen and (min-width: 48rem) {
-  .blog-title {
+  #blog-content .cs-container {
+    max-width: 80rem;
+  }
+  #blog-content .blog-title {
     font-size: 2rem;
   }
-  .blog-header {
+  #blog-content .blog-header {
     margin: 0 auto;
     max-width: 50rem;
   }
-  .blog-header .cs-title {
+  #blog-content .blog-header .cs-title {
     font-size: clamp(1.9375rem, 3.9vw, 4rem);
-  }
-  .blog-container {
-    max-width: 80rem;
   }
   #blog-content .content-overview {
     padding: 100px 0;
@@ -358,22 +369,16 @@
     color: var(--headerColor);
   }
   #blog-content .cs-text-topper {
-    color: #808080;
     padding-bottom: 1rem;
   }
 }
 /*-- -------------------------- -->
-<---          Gallery           -->
+<---        Gallery  (individual Project Interior)         -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #gallery-1446 {
-    padding: var(--sectionPadding);
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 100px;
-  }
   #gallery-1446 .cs-container {
+    padding: 0;
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -450,20 +455,19 @@
   #gallery-1446 .cs-image {
     min-height: clamp(20rem, 60vw, 20rem);
   }
+  #gallery-1446 .cs-image img {
+    margin: 0;
+  }
 }
+/*-- -------------------------- -->
+^^ Explore More (individual Project Interior) ^^
+<--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #services-explore {
     padding: var(--sectionPadding);
     padding-top: 0;
     background-color: #fff;
-  }
-  #services-explore .cs-text {
-    text-align: center;
-  }
-  #services-explore .cs-button-solid {
-    width: 10rem;
-    text-align: center;
   }
   #services-explore .cs-container {
     width: 100%;
@@ -475,23 +479,19 @@
     align-items: center;
     gap: clamp(3rem, 6vw, 4rem);
   }
+  #services-explore .cs-text {
+    text-align: center;
+  }
+  #services-explore .cs-button-solid {
+    width: 10rem;
+    text-align: center;
+  }
   #services-explore .cs-content {
     text-align: start;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .cs-card-group {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    /* Align items to the top */
-    flex-wrap: wrap;
-    gap: clamp(1rem, 1.6vw, 1.25rem);
   }
   #services-explore .cs-item {
     list-style: none;
@@ -500,12 +500,6 @@
     border-radius: 20px;
     position: relative;
     z-index: 1;
-  }
-  .cs-link {
-    text-decoration: none;
-    /* 16px - 24px */
-    padding-bottom: 0;
-    display: block;
   }
   #services-explore .cs-picture {
     width: 100%;
@@ -528,66 +522,17 @@
     object-fit: cover;
     transition: transform 0.8s;
   }
-  .cs-h3 {
-    font-size: 1.25rem;
-    line-height: 1.2em;
-    font-family: "neue-montreal-regular";
-    margin: 0;
-    color: var(--headerColor);
-    padding: 1rem;
-    transition: color 0.3s;
-  }
-  .cs-item-text {
-    font-size: 1rem;
-    line-height: 1.5em;
-    margin: 0;
-    color: var(--bodyTextColor);
-    padding: 1rem 0;
-    opacity: 1;
-    transition: opacity 0.8s;
-    white-space: nowrap;
-    /* Prevent text from wrapping */
-    overflow: hidden;
-    /* Hide overflowed text */
-    text-overflow: ellipsis;
-    /* Show ellipsis (...) for overflowed text */
-  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #services-explore .cs-card-group {
     flex-wrap: wrap;
   }
-  .cs-item {
+  #services-explore .cs-item {
     width: calc(43.3333% - 1.33333rem);
   }
 }
 @media only screen and (min-width: 64rem) {
-  .cs-item {
-    width: calc(33.3333% - 1.33333rem);
-  }
-  .cs-picture img {
-    border-radius: 20px;
-    filter: blur(0) brightness(1);
-    transition: filter 1.3s ease;
-  }
-  .cs-item-text {
-    color: var(--bodyTextColorWhite);
-    font-size: var(--topperFontSize);
-    font-family: neue-montreal-regular;
-    position: absolute;
-    margin: 1rem 1rem;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    opacity: 0;
-    transition: 0.5s ease;
-    z-index: 10;
-    background-color: rgba(232, 229, 228, 0.5);
-    border-radius: 100px;
-    letter-spacing: 1px;
-    padding: 0.5rem 1rem;
-  }
   #services-explore .cs-item {
     list-style: none;
     width: 100%;

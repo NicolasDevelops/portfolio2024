@@ -11,7 +11,7 @@
     overflow: hidden;
     z-index: 1;
     display: flex;
-    height: 80vh;
+    height: 90vh;
   }
   #hero-1426 .cs-background {
     width: 100%;
@@ -47,39 +47,16 @@
     flex-direction: column;
     gap: 2rem;
   }
-  #hero-1426 .cs-topper {
-    /* 13px - 16px */
-    font-size: clamp(0.8125rem, 1.5vw, 1rem);
-    line-height: 1.2em;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-    display: inline-block;
-    position: relative;
-  }
   #hero-1426 .cs-title {
     font-family: "neue-montreal-medium", Arial, sans-serif;
     font-size: clamp(1.9375rem, 3.9vw, 4rem);
-    font-weight: 900;
+    font-weight: 400;
     line-height: 1.3em;
     letter-spacing: -0.2px;
     text-align: inherit;
     margin: 0 0 1rem 0;
     color: var(--headerColor);
     position: relative;
-  }
-  #hero-1426 .cs-text {
-    /* 16px - 20px */
-    font-size: clamp(1.5rem, 2vw, 2rem);
-    line-height: 1.5em;
-    text-align: center;
-    width: 100%;
-    max-width: 40.625rem;
-    margin: 0;
-    /* 24px - 40px */
-    margin-bottom: clamp(1.5rem, 4.2vw, 3rem);
   }
   #hero-1426 .cs-button-group {
     display: flex;

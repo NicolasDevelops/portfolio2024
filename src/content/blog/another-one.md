@@ -28,7 +28,5 @@ bodyImages:
   - https://picsum.photos/1920/1080
   - https://picsum.photos/1920/1080
   - https://picsum.photos/1920/1080
-  - /assets/images/blog/landing.jpg
-  - /assets/images/blog/portfolio-background.png
 ---
 Test
