@@ -2,7 +2,18 @@
 title: Yes another one
 description: fwafawfff
 author: fwaffff
-date: 2024-03-15T18:31:46.035Z
+company: Apple Company Inc
+role: Web Developer
+technologies:
+  - HTML
+overview: I worked with Propeller to design their brand identity and design
+  language. The name Propeller was inspired by the companies overall objective —
+  to propel great business ideas. The identity was designed with this very
+  objective in mind. The logomark is formed from a propeller shape to create a
+  unique letter P. In addition to the brand I also worked with Propeller to
+  develop their product interface as well as their website visuals.
+webLink: https://www.apple.com
+date: 2024-04-01T21:09
 tags:
   - post
 image: https://picsum.photos/1920/1080

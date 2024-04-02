@@ -43,20 +43,6 @@
     gap: clamp(1rem, 2vw, 1.25rem);
     text-align: center;
   }
-  #quote-561 .cs-topper {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 2vw, 1rem);
-    line-height: 1.2em;
-    text-align: inherit;
-    letter-spacing: 0.1em;
-    font-weight: 700;
-    color: var(--bodyTextColorWhite);
-    margin-bottom: 0.25rem;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1.5rem;
-  }
   #quote-561 .cs-quote {
     /* 31px - 49px */
     font-size: clamp(1.9375rem, 5.1vw, 3.2625rem);
@@ -158,7 +144,6 @@
     display: block;
     position: relative;
     z-index: 10;
-    transition: border-radius 0.3s;
   }
   #services-341 .cs-picture img {
     position: absolute;
@@ -211,10 +196,10 @@
   .cs-item {
     width: calc(33.3333% - 1.33333rem);
   }
-  .cs-picture img {
+  #services-341 .cs-picture img {
     border-radius: 20px;
     filter: blur(0) brightness(1);
-    transition: filter 1.3s ease;
+    transition: 0.3s ease;
   }
   .cs-item-text {
     color: var(--bodyTextColorWhite);
@@ -240,14 +225,10 @@
     border-radius: 20px;
     position: relative;
     z-index: 1;
-    transition: transform 0.3s ease;
-  }
-  #services-341 .cs-item:hover {
-    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 12px;
+    transition: 0.3s ease;
   }
   #services-341 .cs-item:hover .cs-picture img {
-    transform: scale(1.1);
-    filter: blur(5px) brightness(0.5);
+    filter: blur(12px) brightness(0.5);
   }
   #services-341 .cs-item:hover .cs-item-text {
     opacity: 1;
@@ -471,7 +452,6 @@
   #services-explore {
     padding: var(--sectionPadding);
     padding-top: 0;
-    background-color: #fff;
   }
   #services-explore .cs-container {
     width: 100%;
@@ -515,7 +495,7 @@
     display: block;
     position: relative;
     z-index: 10;
-    transition: border-radius 0.3s;
+    transition: 0.3s ease;
   }
   #services-explore .cs-picture img {
     position: absolute;
@@ -524,7 +504,8 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    transition: transform 0.8s;
+    transition: 0.3s ease;
+    filter: blur(0) brightness(1);
   }
 }
 /* Tablet - 768px */
@@ -544,15 +525,9 @@
     border-radius: 20px;
     position: relative;
     z-index: 1;
-    transition: transform 0.3s ease;
-  }
-  #services-explore .cs-item:hover {
-    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 12px;
-    transform: translateY(-0.4375rem);
   }
   #services-explore .cs-item:hover .cs-picture img {
-    transform: scale(1.1);
-    filter: blur(5px) brightness(0.5);
+    filter: blur(12px) brightness(0.5);
   }
   #services-explore .cs-item:hover .cs-item-text {
     opacity: 1;
