@@ -13,6 +13,7 @@
     max-width: 34.375rem;
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 3rem;
@@ -81,6 +82,11 @@
     box-sizing: border-box;
     border: 0.5px solid #dad9e3;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #cs-contact-490 #cs-form-490 .cs-button-solid {
+    align-self: center;
   }
   #cs-contact-490 .cs-label {
     /* 14px - 16px */
