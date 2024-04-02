@@ -365,7 +365,7 @@
   #gallery-1446 .cs-container {
     padding: 0;
     width: 100%;
-    max-width: 80rem;
+    max-width: 100%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -400,7 +400,7 @@
     grid-template-columns: 1fr;
     /* Default to one image per row on mobile */
     /* 16px - 20px */
-    gap: clamp(1rem, 1.5vw, 1.25rem);
+    gap: 1.25rem;
     position: relative;
     justify-content: center;
     /* Center items horizontally */
@@ -424,7 +424,6 @@
     /* Center the image */
     display: block;
     margin: 0 auto;
-    max-width: calc(100% - 2rem);
     /* Adjust for padding */
     max-height: clamp(25rem, 60vw, 30rem);
     /* Adjust as needed */
@@ -434,14 +433,17 @@
 /* Larger Screens - Two images per row */
 @media only screen and (min-width: 64rem) {
   #gallery-1446 .cs-gallery {
-    grid-template-columns: repeat(auto-fit, minmax(calc(50% - 0.625rem), 1fr));
-    /* Two images per row */
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    /* Adjust as needed */
   }
   #gallery-1446 .cs-image {
     min-height: clamp(20rem, 60vw, 20rem);
   }
   #gallery-1446 .cs-image img {
-    margin: 0;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
   }
 }
 /*-- -------------------------- -->
