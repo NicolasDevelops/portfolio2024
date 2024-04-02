@@ -54,15 +54,6 @@
                 margin-bottom: 0;
             }
         }
-
-        .cs-social {
-            /* 32px - 80px */
-            margin-top: clamp(2rem, 6vw, 5rem);
-            display: inline-flex;
-            justify-content: flex-start;
-            gap: (12/16em);
-        }
-
         .cs-social-link {
             /* 32px - 52px */
             width: clamp(2rem, 4vw, 3.25rem);
@@ -99,7 +90,7 @@
             padding: clamp(1.25rem, 4.5vw, 2.5rem);
             /* prevents padding from affecting width and height */
             box-sizing: border-box;
-            border: 1px solid #dad9e3;
+            border: .5px solid #dad9e3;
             border-radius: (16/16rem);
         }
 
@@ -142,6 +133,10 @@
 
             &::placeholder {
                 color: #7d799c;
+            }
+
+            &:focus {
+                outline: none;
             }
         }
 

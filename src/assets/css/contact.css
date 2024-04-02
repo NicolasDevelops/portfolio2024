@@ -48,13 +48,6 @@
   #cs-contact-490 .cs-link:last-of-type {
     margin-bottom: 0;
   }
-  #cs-contact-490 .cs-social {
-    /* 32px - 80px */
-    margin-top: clamp(2rem, 6vw, 5rem);
-    display: inline-flex;
-    justify-content: flex-start;
-    gap: 0.75em;
-  }
   #cs-contact-490 .cs-social-link {
     /* 32px - 52px */
     width: clamp(2rem, 4vw, 3.25rem);
@@ -86,7 +79,7 @@
     padding: clamp(1.25rem, 4.5vw, 2.5rem);
     /* prevents padding from affecting width and height */
     box-sizing: border-box;
-    border: 1px solid #dad9e3;
+    border: 0.5px solid #dad9e3;
     border-radius: 1rem;
   }
   #cs-contact-490 .cs-label {
@@ -127,6 +120,10 @@
   #cs-contact-490 .cs-input::placeholder,
   #cs-contact-490 textarea::placeholder {
     color: #7d799c;
+  }
+  #cs-contact-490 .cs-input:focus,
+  #cs-contact-490 textarea:focus {
+    outline: none;
   }
   #cs-contact-490 textarea {
     font-family: inherit;
