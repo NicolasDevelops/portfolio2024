@@ -697,6 +697,10 @@ html hr {
   }
   #content-1450 .cs-title.getInTouch {
     color: #7e7e7e;
+    text-decoration: none;
+  }
+  #content-1450 .cs-title.getInTouch:hover {
+    text-decoration: underline;
   }
 }
 @media only screen and (min-width: 55.75rem) {
