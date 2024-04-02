@@ -150,3 +150,9 @@
     text-align: left;
   }
 }
+#cs-footer-107 .cs-li {
+  padding-left: 2rem;
+}
+#cs-footer-107 .cs-li:first-child {
+  padding-left: 0;
+}
