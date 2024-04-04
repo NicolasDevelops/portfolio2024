@@ -7,6 +7,9 @@
     padding: var(--sectionPadding);
     padding-top: 200px;
   }
+  #cs-contact-490 .cs-topper {
+    margin-bottom: 1.5rem;
+  }
   #cs-contact-490 .cs-container {
     width: 100%;
     /* changes to 1280px at desktop */

@@ -84,7 +84,6 @@
 @media only screen and (min-width: 0rem) {
   #about-me-content {
     padding: var(--sectionPadding);
-    padding-top: 200px;
   }
   #about-me-content .cs-container {
     width: 100%;
@@ -159,6 +158,55 @@
   }
 }
 /*-- -------------------------- -->
+<---           Skill set            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #skill-set {
+    padding-bottom: 100px;
+  }
+  #skill-set .cs-container {
+    width: 100%;
+    max-width: 67.5rem;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #skill-set .skill-group {
+    text-align: center;
+  }
+  #skill-set .skill {
+    padding: 1rem;
+    color: var(--headerColor);
+  }
+  #skill-set .skill {
+    font-family: "neue-montreal-medium", Arial, sans-serif;
+    font-size: clamp(1.5375rem, 3.9vw, 1.5rem);
+    line-height: 1.3em;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: var(--headerColor);
+  }
+  #skill-set .years {
+    font-size: 0.9rem;
+    color: #666;
+    background-color: #f3f2f1;
+    border-radius: 100px;
+    display: inline-block;
+    padding: 0.3rem 1rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #skill-set .cs-container {
+    justify-content: space-between;
+  }
+}
+/*-- -------------------------- -->
 <---         Services           -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
@@ -168,6 +216,9 @@
     overflow: hidden;
     position: relative;
     z-index: 1;
+  }
+  #services-1267 .cs-topper {
+    margin-bottom: 1.5rem;
   }
   #services-1267 .cs-container {
     width: 100%;
@@ -238,8 +289,6 @@
   }
   #services-1267 .cs-item-text {
     margin: 0;
-    font-size: 0.875rem;
-    line-height: 1.5em;
     color: var(--bodyTextColor);
   }
 }
@@ -279,48 +328,9 @@
     grid-column: span 6;
   }
 }
-/*-- -------------------------- -->
-<---           Skill set            -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #skill-set {
-    padding-bottom: 100px;
-  }
-  #skill-set .cs-container {
-    width: 100%;
-    max-width: 67.5rem;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #skill-set .skill-group {
-    text-align: center;
-  }
-  #skill-set .skill {
-    padding: 1rem;
-    color: var(--headerColor);
-  }
-  #skill-set .skill {
-    font-family: "neue-montreal-medium", Arial, sans-serif;
-    font-size: clamp(1.5375rem, 3.9vw, 1.5rem);
-    line-height: 1.3em;
-    letter-spacing: -0.2px;
-    text-align: center;
-    color: var(--headerColor);
-  }
-  #skill-set .years {
-    font-size: 0.9rem;
-    color: #838383;
-  }
+#cs-footer-107 .cs-li {
+  padding-left: 2rem;
 }
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #skill-set .cs-container {
-    justify-content: space-between;
-  }
+#cs-footer-107 .cs-li:first-child {
+  padding-left: 0;
 }
