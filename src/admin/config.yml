@@ -28,5 +28,8 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image Caption", name: "imageAlt", widget: "string" }
-      - { label: "Body Images", name: "bodyImages", widget: "list", field: { label: "Image", name: "image", widget: "image" } }
+      - { label: "Body Images", name: "bodyImages", widget: "list", fields: [
+          { label: "Image", name: "image", widget: "image" },
+          { label: "Alt Text", name: "altText", widget: "string", hint: "Alt text for the image" }]
+      }
       - { label: "Body", name: "body", widget: "markdown" }

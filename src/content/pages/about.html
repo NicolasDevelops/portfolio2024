@@ -13,48 +13,171 @@ permalink: 'about/'
 
 {% block body %}
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!--                    Landing                   -->
     <!-- ============================================ -->
 
-    {# <section id="int-hero">
-        <h1 id="home-h">About Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-
-    </section> #}
-
-<!-- ============================================ -->
-<!--                 About Me                 -->
-<!-- ============================================ -->
-
-<section id="sbs-1308">
+<section id="about-me-landing">
     <div class="cs-container">
-        <!-- Left Image Section -->
-        <div class="cs-image-group">
-            <!--Image-->
-            <picture class="cs-picture">
-                {# <source media="(max-width: 600px)" srcset="assets/images/avatar.png">
-                <source media="(min-width: 601px)" srcset="assets/images/avatar.png"> #}
-                <img loading="lazy" decoding="async" src="/assets/images/avatar.png" alt="avatar" width="630" height="630" aria-hidden="true">
-            </picture>
-        </div>
-        <!-- Right Content Section-->
         <div class="cs-content">
-            <span class="cs-topper">About Me</span>
-            <h2 class="cs-title">A little about myself</h2>
-            <p class="cs-text">
-                Hey there! I'm Nicolas Ortiz, a passionate web developer currently studying Interactive Media Design at Algonquin College. For me, web development isn't just a skill – it's a calling. I'm driven by a desire to craft websites that not only look stunning but also function flawlessly.
+            <span class="cs-topper">About me</span>
+            <p class="cs-quote">
+                Hey 👋🏼 I'm Nico 
             </p>
-            <p class="cs-text">
-                In my work, I'm devoted to delivering websites that exceed expectations. Every site I create achieves 100% page speed, accessibility, SEO, and best practices. Whether it's optimizing images or fine-tuning fonts, I prioritize user experience above all else.
-            </p>
-            <a class="cs-button-solid" aria-label="Contact me" href="/contact">Contact Me</a>
         </div>
     </div>
 </section>
+                                
+<!-- ============================================ -->
+<!--                  Image of me                     -->
+<!-- ============================================ -->
+
+<div id="gallery-565">
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/long.me.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/long.me.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery9.jpg" alt="picture" width="480" height="549">
+    </picture>
+    {# <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery10.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery10.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery10.jpg" alt="picture" width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery11.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery11.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery11.jpg" alt="picture" width="480" height="549">
+    </picture>
+    <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery12.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery12.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Gallery/gallery12.jpg" alt="picture" width="480" height="549">
+    </picture> #}
+</div>
+
+    <!-- ============================================ -->
+    <!--             About me - content                   -->
+    <!-- ============================================ -->
+
+<section id="about-me-content">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Nicolas Ortiz</span>
+            <p class="cs-quote">
+                A freelance web developer based in Ottawa, Ontario. I merge my experience in web development to create compelling digital experiences, solving problems, telling stories, and captivating audiences.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- ============================================ -->
+    <!--             About me - toolbelt                   -->
+    <!-- ============================================ -->
+
+<section id="toolbelt">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Toolbelt</span>
+            <p class="cs-quote">
+                Current skill set
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Skill set                      -->
+<!-- ============================================ -->
+
+<section id="skill-set">
+    <div class="cs-container">
+        <!--Ideally you want to use svg's for the file path image, which is why these aren't wrapped in picture elements for different screen sizes-->
+        <div class="skill-group">
+            <p class="years">1 year</p>
+            <p class="skill">HTML5</p>
+        </div>
+        <div class="skill-group">
+            <p class="years">1 year</p>
+            <p class="skill">CSS3</p>
+        </div>
+        <div class="skill-group">
+            <p class="years">1 year</p>
+            <p class="skill">Javascript</p>
+        </div>
+        <div class="skill-group">
+            <p class="years">1 year</p>
+            <p class="skill">Bootstrap</p>
+        </div>
+    </div>
+</section>
+       
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-1267">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">My mission</span>
+            <h2 class="cs-title">Crafting Websites for Success</h2>
+            <p class="cs-text">When I build your website, it's more than just aesthetics – it's about delivering a seamless user experience. From fast loading times to smooth navigation and high search rankings, I ensure every aspect enhances your online presence.</p>
+            <p class="cs-text">When I build your website, it's more than just aesthetics – it's about delivering a seamless user experience. From fast loading times to smooth navigation and high search rankings, I ensure every aspect enhances your online presence.</p>
+            <a href="/contact" class="cs-button-solid" aria-label="contact me">Contact Me</a>
+        </div>
+        <div class="cs-wrapper">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        Web Performance
+                    </h3>
+                    <span class="cs-number">100%</span>
+                    <p class="cs-item-text">
+                        Elevate your online presence with websites optimized for lightning-fast speed, ensuring top-notch performance at 100%
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        Best Practices
+                    </h3>
+                    <span class="cs-number">100%</span>
+                    <p class="cs-item-text">
+                        Deliver excellence in web development with websites adhering to the highest standards, achieving a flawless 100% compliance.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+                        Web Accessibility
+                    </h3>
+                    <span class="cs-number">100%</span>
+                    <p class="cs-item-text">
+                        Empower inclusivity and reach wider audiences with websites meticulously crafted for accessibility, boasting a perfect 100% score.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <h3 class="cs-h3">
+
+                        SEO
+                    </h3>
+                    <span class="cs-number">100%</span>
+                    <p class="cs-item-text">
+                        Enhance your digital footprint and visibility online with websites finely tuned for search engine optimization, driving organic traffic to new heights.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+                         
 
 
     {% include 'components/cta.html' %}

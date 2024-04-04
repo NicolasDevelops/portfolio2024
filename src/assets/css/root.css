@@ -667,7 +667,7 @@ html hr {
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #content-1450 {
-    padding: 150px 0;
+    padding: 100px 0;
   }
   #content-1450 .cs-container {
     width: 100%;
