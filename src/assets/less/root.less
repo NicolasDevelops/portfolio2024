@@ -320,9 +320,7 @@ html hr {
         transform: translateX(0);
         opacity: 1;
         clip-path: circle(100% at 100% 50%);
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
-        background-color: rgba(248, 248, 248, 0.5);
+        background-color: #fff;
     }
 
     #cs-navigation.cs-active .cs-li {
@@ -448,20 +446,19 @@ html hr {
         margin: 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 2rem;
+        gap: .5rem;
         overflow: auto;
         overflow: hidden;
     }
 
     #cs-navigation .cs-li {
-        text-align: end;
+        text-align: center;
         opacity: 0;
         list-style: none;
         width: 100%;
         /* transition from these values */
         transition: opacity 0.6s ease;
-        padding-right: 2rem;
+        // padding-left: 2rem;
         overflow: hidden;
         transform: translateX(150%);
         transition: transform 1s ease, opacity 1s ease;
@@ -495,8 +492,10 @@ html hr {
     }
 
     #cs-navigation .cs-li-link {
-        /* 16px - 24px */
-        font-size: var(--headerFontSize);
+        font-family: "neue-montreal-medium",
+        Arial,
+        sans-serif;
+        font-size: 3rem;
         line-height: 1.2em;
         text-decoration: none;
         margin: 0;
@@ -507,12 +506,49 @@ html hr {
     }
 
     #cs-navigation .cs-li-link.cs-active {
-        font-family: neue-montreal-bold;
-        
+        position: relative;
+    }
+
+    #cs-navigation .cs-li-link.cs-active::before,
+    #cs-navigation .cs-li-link.cs-active::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        height: 1.5px;
+        background-color: var(--headerColor);
+    }
+
+    #cs-navigation .cs-li-link.cs-active::before {
+        left: 0;
+        width: 20px;
+        transform: translateY(-50%);
+        transform: translateX(-2rem);
+    }
+
+    #cs-navigation .cs-li-link.cs-active::after {
+        right: 0;
+        width: 20px;
+        transform: translateY( -50%);
+        transform: translateX( 2rem);
     }
 
     #cs-navigation .cs-li-link:hover {
         color: var(--primary);
+    }
+
+    // mobile divider line
+    #cs-navigation hr {
+        border: none;
+        height: 1px;
+        background-color: var(--headerColor);
+        /* Subtle gray color */
+        margin: 50px 2rem;
+    }
+
+    #cs-navigation #content-1450 {
+        .cs-container {
+            margin-top: -100px;
+        }
     }
 }
 
@@ -520,6 +556,11 @@ html hr {
 @media only screen and (min-width: 48rem) {
     #cs-navigation .cs-contact-group {
         display: block;
+    }
+    #cs-navigation #content-1450 {
+        .cs-container {
+            display: none !important;
+        }
     }
 }
 
