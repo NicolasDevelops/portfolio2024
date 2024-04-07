@@ -4,15 +4,15 @@
 <section id="services-explore">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Portfolio</span>
-            <h2 class="cs-title">Explore More</h2>
+            <span class="cs-topper section fadeUp">Portfolio</span>
+            <h2 class="cs-title section fadeUp">Explore More</h2>
         </div>
         <ul class="cs-card-group">
             {% if collections.post | length == 0 %}
                 <li>No recent projects.</li>
             {% else %}
                 {%- for post in collections.featured | reverse -%}
-                    <li class="cs-item">
+                    <li class="cs-item section fadeUp">
                         <a href="{{ post.url }}" class="cs-link">
                             <picture class="cs-picture">
                                 <source media="(max-width: 600px)" srcset="{{ post.data.image }}">

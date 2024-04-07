@@ -17,7 +17,6 @@
   #quote-561 {
     padding: var(--sectionPadding);
     background-color: #fff;
-    /* Animate the quote in when scrolled into view */
   }
   #quote-561 .cs-container {
     width: 100%;
@@ -51,11 +50,7 @@
     letter-spacing: -0.2px;
     margin: 0;
     color: var(--headerColor);
-    opacity: 0;
     transition: opacity 1.5s ease;
-  }
-  #quote-561 .cs-quote.animate-in {
-    opacity: 1;
   }
   #quote-561 .cs-quote span {
     color: var(--headerColor);

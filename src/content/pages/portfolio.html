@@ -16,11 +16,11 @@ permalink: 'portfolio/'
     <!-- ============================================ -->
 <!--                   Hero                       -->
 <!-- ============================================ -->
-<section id="quote-561">
+<section id="quote-561" class="section fadeUp">
     <div class="cs-container">
         <div class="cs-content">
                 <p class="cs-quote">
-                In the digital age, your website is often the first point of contact between you and your potential customers.<br><br><span>Make it count.</span>
+                In the digital age, your website is often the first point of contact between you and your potential customers.<br><br><span class=" section fadeUp">Make it count.</span>
                 </p>
         </div>
     </div>
@@ -34,15 +34,15 @@ permalink: 'portfolio/'
     <section id="services-341">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Portfolio</span>
-                <h2 class="cs-title"> Online Portfolio Highlights</h2>
+                <span class="cs-topper section fadeUp">Portfolio</span>
+                <h2 class="cs-title section fadeUp"> Online Portfolio Highlights</h2>
             </div>
             <ul class="cs-card-group">
                 {% if collections.post | length == 0 %}
                     <li>No recent projects.</li>
                 {% else %}
                     {%- for post in collections.post | reverse -%}
-                        <li class="cs-item">
+                        <li class="cs-item section fadeUp">
                             <a href="{{ post.url }}" class="cs-link">
                                 <picture class="cs-picture">
                                     <source media="(max-width: 600px)" srcset="{{ post.data.image }}">
@@ -58,5 +58,4 @@ permalink: 'portfolio/'
         </div>
     </section>
     {% include 'components/cta.html' %}
-    <script defer src="/assets/js/portfolioQuote.js"></script>
 {% endblock %}

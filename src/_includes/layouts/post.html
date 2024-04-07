@@ -12,11 +12,11 @@
     <div class="cs-container">
         <div class="blog-header">
             <div class="blog-author-info">
-                <span class="cs-topper">{{ date | postDate }} </span>
+                <span class="cs-topper section fadeUp">{{ date | postDate }} </span>
             </div>
-            <h1 class="cs-title">{{ title }}</h1>
+            <h1 class="cs-title section fadeUp">{{ title }}</h1>
         </div>
-        <section id="img-hero">
+        <section id="img-hero section fadeUp">
             <picture>
                 <source media="(max-width: 600px)" srcset="{{ image }}">
                 <source media="(min-width: 601px)" srcset="{{ image }}">
@@ -25,28 +25,28 @@
         </section>
         <ul class="projectInfo">
             <li class="cs-li cs-link">
-                <p class="cs-text cs-text-topper">Company</p>
-                <p class="cs-text">{{ company }}</p>
+                <p class="cs-text cs-text-topper section fadeUp">Company</p>
+                <p class="cs-text section fadeUp">{{ company }}</p>
             </li>
             <li class="cs-li cs-link">
-                <p class="cs-text cs-text-topper">Role</p>
-                <p class="cs-text">{{ role }}</p>
+                <p class="cs-text cs-text-topper section fadeUp">Role</p>
+                <p class="cs-text section fadeUp">{{ role }}</p>
             </li>
             <li class="cs-li cs-link">
-                <p class="cs-text cs-text-topper">Technology</p>
-                <p class="cs-text">
+                <p class="cs-text cs-text-topper section fadeUp">Technology</p>
+                <p class="cs-text section fadeUp">
                     {% for technology in technologies %} {{ technology }}{% if not loop.last %}, {% endif %} {% endfor %}
                 </p>
             </li>
             <li class="cs-li cs-link">
-                <p class="cs-text cs-text-topper">Website</p>
-                <a class="cs-text" target="_blank" href="{{ webLink }}">{{ webLink }}</a>
+                <p class="cs-text cs-text-topper section fadeUp">Website</p>
+                <a class="cs-text section fadeUp" target="_blank" href="{{ webLink }}">{{ webLink }}</a>
             </li>
         </ul>
         <hr>
         <div class="content-overview">
-            <p class="cs-text cs-text-topper">Overview</p>
-            <p class="cs-text">{{ overview }}</p>
+            <p class="cs-text cs-text-topper section fadeUp">Overview</p>
+            <p class="cs-text section fadeUp">{{ overview }}</p>
         </div> 
         <hr>
         <!-- ============================================ -->
@@ -56,14 +56,14 @@
             <div class="cs-container">
                 <div class="cs-content">
                     <div class="cs-flex">
-                        <span class="cs-text cs-text-topper">Showcase</span>
-                        <h2 class="cs-title">Project Highlights</h2>
+                        <span class="cs-text cs-text-topper section fadeUp">Showcase</span>
+                        <h2 class="cs-title section fadeUp">Project Highlights</h2>
                     </div>
                 </div>
                 <div class="cs-gallery">
                     <!-- Body pictures & alt text loop -->
                     {% for image in bodyImages %}
-                        <div class="cs-image">
+                        <div class="cs-image section fadeUp">
                             <img loading="lazy" decoding="async" src="{{ image.image }}" alt="{{ image.altText }}">
                         </div>
                     {% endfor %}

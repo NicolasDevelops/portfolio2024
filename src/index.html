@@ -1,7 +1,6 @@
 ---
 title: 'Ortiz Web Works | Web Development | Ottawa, ON'
 description: 'Ortiz Web Works homepage'
-preloadImg: '/assets/images/landingBlur.webp'
 permalink: '/index.html'
 ---
 
@@ -41,28 +40,16 @@ permalink: '/index.html'
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="hero-1426">
+<section id="hero-1426" class="section fadeUp">
     <div class="cs-container">
         <div class="cs-content">
             <h1 class="cs-title"> Creating exceptional digital experiences for clients worldwide.</h1>
-            {# <span class="cs-topper">web developer</span>
-            <h1 class="cs-title">Nicolas Ortiz</h1>
-            <p class="cs-text">
-                Creating digital experiences with passion and precision. Welcome to my portfolio.
-            </p> #}
-            <div class="cs-button-group">
+            <div class="cs-button-group section fadeUp">
                 <a href="/contact" class="cs-button-solid cs-button">Contact Me</a>
                 <a href="/portfolio" class="cs-button-solid cs-button2">View Portfolio</a>
             </div>
         </div>
     </div>
-
-    <!-- Background Image -->
-    {# <picture class="cs-background">
-        <source media="(max-width: 600px)" srcset="/assets/images/landingBlur-m.webp">
-        <source media="(min-width: 601px)" srcset="/assets/images/landingBlur.webp">
-        <img loading="lazy" decoding="async" src="/assets/images/landingBlur.webp" alt="field" width="1200" height="496" aria-hidden="true">
-    </picture> #}
 </section> 
 
 
@@ -73,18 +60,18 @@ permalink: '/index.html'
 <section id="services-341">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">Portfolio</span>
-            <h2 class="cs-title">Featured Projects</h2>
-            <p class="cs-text">
+            <span class="cs-topper section fadeUp">Portfolio</span>
+            <h2 class="cs-title section fadeUp">Featured Projects</h2>
+            <p class="cs-text section fadeUp">
                 Explore standout projects showcasing my web development skills and innovation.
             </p>
         </div>
-        <ul class="cs-card-group">
+        <ul class="cs-card-group section fadeUp">
             {% if collections.post | length == 0 %}
                 <li>No recent projects.</li>
             {% else %}
                 {%- for post in collections.featured | reverse -%}
-                    <li class="cs-item">
+                    <li class="cs-item section fadeUp">
                         <a href="{{ post.url }}" class="cs-link">
                             <picture class="cs-picture">
                                 <source media="(max-width: 600px)" srcset="{{ post.data.image }}">
@@ -101,46 +88,5 @@ permalink: '/index.html'
         <a class="cs-button-solid" aria-label="learn more about our programs" href="/portfolio">View All</a>
     </div>
 </section>
-
-<!-- ============================================ -->
-<!--                    Stats                     -->
-<!-- ============================================ -->
-
-{# <section id="stats-888">
-    <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">My Mission</span>
-            <h2 class="cs-title">Crafting Websties for Success</h2>
-            <p class="cs-text">
-                When I build your website, it's more than just aesthetics – it's about delivering a seamless user experience. From fast loading times to smooth navigation and high search rankings, I ensure every aspect enhances your online presence.
-            </p>
-            <p class="cs-text">
-                I delve deep into details, optimizing images for speed and handling fonts for accessibility. With SEO best practices and industry standards, your website becomes a standout, ready to elevate your online presence significantly.
-            </p>
-            <a href="/contact" class="cs-button-solid">Contact Me</a>
-        </div>
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <span class="cs-number">100%</span>
-                <span class="cs-desc">Web <br>Performance</span>
-            </li>
-            <li class="cs-item">
-                <span class="cs-number">100%</span>
-                <span class="cs-desc">Web<br>Accessibility</span>
-            </li>
-            <li class="cs-item">
-                <span class="cs-number">100%</span>
-                <span class="cs-desc">Best<br>Practices</span>
-            </li>
-            <li class="cs-item">
-                <span class="cs-number">100%</span>
-                <span class="cs-desc">Search Engine<br>Optimization</span>
-            </li>
-        </ul>
-    </div>
-</section> #}
-
-
     {% include 'components/cta.html' %}
-    <script defer src="/assets/js/quote.js"></script>
 {% endblock %}
