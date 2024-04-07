@@ -13,7 +13,7 @@ overview: I worked with Propeller to design their brand identity and design
   unique letter P. In addition to the brand I also worked with Propeller to
   develop their product interface as well as their website visuals.
 webLink: https://www.apple.com
-date: 2024-04-01T21:09
+date: 2024-04-06T23:03:00.000Z
 tags:
   - post
 image: https://picsum.photos/1920/1080

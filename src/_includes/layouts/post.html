@@ -16,11 +16,11 @@
             </div>
             <h1 class="cs-title section fadeUp">{{ title }}</h1>
         </div>
-        <section id="img-hero section fadeUp">
+        <section id="img-hero">
             <picture>
                 <source media="(max-width: 600px)" srcset="{{ image }}">
                 <source media="(min-width: 601px)" srcset="{{ image }}">
-                <img aria-hidden="true" decoding="async" src="{{ image }}" alt="{{ imageAlt }}" loading="eager" width="100%" height="auto">
+                <img aria-hidden="true" decoding="async" src="{{ image }}" alt="{{ imageAlt }}" loading="eager" width="100%" height="auto" class="section fadeUp">
             </picture>
         </section>
         <ul class="projectInfo">

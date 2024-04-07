@@ -242,7 +242,7 @@
     margin: auto;
   }
   #img-hero img {
-    border-radius: 15px;
+    border-radius: 10px;
   }
   #img-hero:before {
     display: none;
