@@ -15,7 +15,7 @@ webLink: www.apple.ca
 date: 2024-03-28T21:23:19.816Z
 tags:
   - featured
-image: /assets/images/blog/portfolio-background.png
+image: https://picsum.photos/1920/1080
 imageAlt: Portfolio website hero background
 bodyImages:
   - image: https://picsum.photos/1920/1080
