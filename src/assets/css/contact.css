@@ -22,12 +22,12 @@
     gap: 3rem;
   }
   #cs-contact-490 .cs-content {
-    max-width: 32.625rem;
     text-align: center;
   }
   #cs-contact-490 .cs-text {
     /* 16px - 48px */
     margin: 0 0 clamp(1rem, 4.4vw, 3rem) 0;
+    font-size: 1.5rem;
   }
   #cs-contact-490 .cs-header {
     /* 13px - 16px */
