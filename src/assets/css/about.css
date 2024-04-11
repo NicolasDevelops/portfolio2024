@@ -118,12 +118,13 @@
   }
 }
 /*-- -------------------------- -->
-<---           toolbelt            -->
+<---           Our Mission            -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #toolbelt {
     padding: var(--sectionPadding);
+    padding-bottom: 50px;
   }
   #toolbelt .cs-container {
     width: 100%;
@@ -151,7 +152,6 @@
     line-height: 1.3em;
     letter-spacing: -0.2px;
     text-align: center;
-    margin: 0 0 1rem 0;
     color: var(--headerColor);
     position: relative;
     max-width: 45rem;
@@ -162,52 +162,137 @@
   }
 }
 /*-- -------------------------- -->
-<---           Skill set            -->
+<---         Why Choose         -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #skill-set {
-    padding-bottom: 100px;
+  #why-choose-441 {
+    padding: var(--sectionPadding);
+    padding-top: 0;
   }
-  #skill-set .cs-container {
+  #why-choose-441 .cs-container {
     width: 100%;
-    max-width: 67.5rem;
+    /* changes to 1280px at tablet */
+    max-width: 34.375em;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #skill-set .skill-group {
+  #why-choose-441 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #why-choose-441 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* 12px - 20px */
+    gap: clamp(0.75rem, 1.5vw, 1.25rem);
+  }
+  #why-choose-441 .cs-item {
+    list-style: none;
+    width: 100%;
+    /* changes on tablet */
+    max-width: 28.875rem;
+    /* 24px - 40px top & bottom */
+    /* 24px - 40px left & right */
+    padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    border-radius: 1rem;
+    background-color: #fff;
+    border: 1px solid #dad9e3;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s, border 0.3s;
+  }
+  #why-choose-441 .cs-item:before {
+    /* green border on hover */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid var(--headerColor);
+    border-radius: 0.75rem;
+    /* prevents border from affecting height and width */
+    box-sizing: border-box;
+    /* prevents the mouse from interacting with it */
+    pointer-events: none;
+    opacity: 0;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s;
+  }
+  #why-choose-441 .cs-item:hover {
+    background-color: #fff;
+    transform: translateY(-0.4375rem);
+    border-color: var(--primary);
+  }
+  #why-choose-441 .cs-item:hover:before {
+    opacity: 1;
+  }
+  #why-choose-441 .cs-link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #why-choose-441 .cs-text {
+    font-size: 1.5rem;
     text-align: center;
   }
-  #skill-set .skill {
-    padding: 1rem;
-    color: var(--headerColor);
-  }
-  #skill-set .skill {
-    font-family: "neue-montreal-medium", Arial, sans-serif;
-    font-size: clamp(1.5375rem, 3.9vw, 1.5rem);
-    line-height: 1.3em;
-    letter-spacing: -0.2px;
+  #why-choose-441 .cs-number {
+    font-size: 2rem;
+    font-weight: 400;
     text-align: center;
+    line-height: 1.2em;
+    margin: 0;
+    margin-bottom: 0.25rem;
     color: var(--headerColor);
+    transition: color 0.3s;
   }
-  #skill-set .years {
-    font-size: 0.9rem;
-    color: #666;
-    background-color: #f3f2f1;
-    border-radius: 100px;
-    display: inline-block;
-    padding: 0.3rem 1rem;
+  #why-choose-441 .cs-desc {
+    /* 14px - 20px */
+    font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+    text-align: center;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+    transition: color 0.3s;
+  }
+  #why-choose-441 .cs-item-p {
+    text-align: center;
+    font-size: var(--bodyFontSize);
+    color: var(--bodyTextColor);
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #skill-set .cs-container {
-    justify-content: space-between;
+  #why-choose-441 .cs-container {
+    max-width: 80rem;
+  }
+  #why-choose-441 .cs-card-group {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  #why-choose-441 .cs-item {
+    width: 100%;
   }
 }
 /*-- -------------------------- -->
