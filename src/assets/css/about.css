@@ -216,7 +216,7 @@
     border: 1px solid #dad9e3;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     position: relative;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s, border 0.3s;
+    transition: 0.3s ease;
   }
   #why-choose-441 .cs-item:before {
     /* green border on hover */
@@ -235,7 +235,7 @@
     display: block;
     top: 0;
     left: 0;
-    transition: opacity 0.3s;
+    transition: 0.3s ease;
   }
   #why-choose-441 .cs-item:hover {
     background-color: #fff;
