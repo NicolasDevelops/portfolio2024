@@ -817,6 +817,7 @@ html hr {
     width: 5rem;
     border-radius: 100px;
     transition: 0.3s ease;
+    padding: 1rem;
   }
   #cs-footer-107 .cs-link:hover {
     background-color: rgba(232, 229, 228, 0.5);
