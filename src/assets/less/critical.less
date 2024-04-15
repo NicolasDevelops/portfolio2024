@@ -2,14 +2,31 @@
 
 // Fade up sections using Intersection Observer
 
-.fadeUp {
-    transform: translateY(40px);
-    opacity: 0;
-    transition-property: transform, opacity;
-    transition-duration: 1s;
-    transition-timing-function: ease;
+// .fadeUp {
+//     transform: translateY(40px);
+//     opacity: 0;
+//     transition-property: transform, opacity;
+//     transition-duration: 1s;
+//     transition-timing-function: ease;
+// }
+
+// Define the keyframes for the fade-up animation
+@keyframes fadeUpAnimation {
+    0% {
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: none;
+        opacity: 1;
+    }
 }
 
+// Apply the fade-up animation to the .fadeUp class
+.fadeUp {
+    animation: fadeUpAnimation 1s ease forwards; // Adjust the animation duration and timing function as needed
+}
 .in-view {
     transform: none;
     opacity: 1;
