@@ -18,11 +18,14 @@ const HeroObserver = new IntersectionObserver(entries => {
 
 // Adds DOMContentLoaded to make sure elements have been loaded in the DOM.
 window.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('.heroSection.heroFadeUp');
-  sections.forEach(section => {
-    HeroObserver.observe(section);
-    
-    // Apply the 'heroInView' class dynamically after initial content loading
-    section.classList.add(".heroInView");
-  });
+  // Lazy load the script by delaying its execution until after initial content loading
+  setTimeout(() => {
+    const sections = document.querySelectorAll('.heroSection.heroFadeUp');
+    sections.forEach(section => {
+      HeroObserver.observe(section);
+      
+      // Apply the 'heroInView' class dynamically after initial content loading
+      section.classList.add("heroInView");
+    });
+  }, 0); // Delay execution to ensure other critical tasks are completed first
 });
