@@ -317,9 +317,6 @@
   #blog-content .projectInfo li {
     padding-top: 1rem;
   }
-  #blog-content .projectInfo li:first-child {
-    padding: 0;
-  }
 }
 @media only screen and (min-width: 48rem) {
   #blog-content .cs-container {
