@@ -13,6 +13,20 @@ html hr {
 .hidden {
   display: none;
 }
+/* Define keyframe animation for fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Apply the animation to the other sections */
+.heroFadeUp {
+  animation: fadeIn 1s ease;
+}
 .fadeUp {
   transform: translateY(40px);
   opacity: 0;
@@ -23,21 +37,6 @@ html hr {
 .in-view {
   transform: none;
   opacity: 1;
-}
-/* Define keyframe animation for fade-in */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-/* Apply the animation to the hero section */
-.heroFadeUp {
-  animation: fadeIn 1s ease;
 }
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0em) {
