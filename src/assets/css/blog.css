@@ -131,7 +131,7 @@
   }
   #services-341 .cs-picture {
     width: 100%;
-    height: 21.25rem;
+    height: 12rem;
     /* 16px - 24px */
     border-radius: 20px;
     /* clips the img tag corners */
@@ -184,7 +184,7 @@
     min-width: 40rem;
   }
   #services-341 .cs-picture {
-    height: 25rem;
+    height: 23rem;
   }
 }
 @media only screen and (min-width: 64rem) {
@@ -193,7 +193,6 @@
   }
   #services-341 .cs-picture img {
     border-radius: 20px;
-    filter: blur(0) brightness(1);
     transition: 0.3s ease;
   }
   .cs-item-text {
@@ -201,17 +200,16 @@
     font-size: var(--topperFontSize);
     font-family: neue-montreal-regular;
     position: absolute;
-    margin: 1rem 1rem;
     top: 0;
     left: 0;
     box-sizing: border-box;
     opacity: 0;
-    transition: 0.5s ease;
     z-index: 10;
-    background-color: rgba(232, 229, 228, 0.5);
+    background-color: var(--headerColor);
     border-radius: 100px;
     letter-spacing: 1px;
     padding: 0.5rem 1rem;
+    transition: 0.5s ease;
   }
   #services-341 .cs-item {
     list-style: none;
@@ -222,8 +220,8 @@
     z-index: 1;
     transition: 0.3s ease;
   }
-  #services-341 .cs-item:hover .cs-picture img {
-    filter: blur(12px) brightness(0.5);
+  #services-341 .cs-item:hover {
+    transform: scale(1.02);
   }
   #services-341 .cs-item:hover .cs-item-text {
     opacity: 1;
@@ -481,10 +479,11 @@
     border-radius: 20px;
     position: relative;
     z-index: 1;
+    transition: 0.3s ease;
   }
   #services-explore .cs-picture {
     width: 100%;
-    height: 15rem;
+    height: 12rem;
     /* 16px - 24px */
     border-radius: 20px;
     /* clips the img tag corners */
@@ -502,7 +501,6 @@
     width: 100%;
     object-fit: cover;
     transition: 0.3s ease;
-    filter: blur(0) brightness(1);
   }
 }
 /* Tablet - 768px */
@@ -513,8 +511,18 @@
   #services-explore .cs-item {
     width: calc(43.3333% - 1.33333rem);
   }
+  #services-explore .cs-picture {
+    height: 12rem;
+  }
 }
 @media only screen and (min-width: 64rem) {
+  #services-explore .cs-picture img {
+    border-radius: 20px;
+    transition: 0.3s ease;
+  }
+  #services-explore .cs-picture {
+    height: 15rem;
+  }
   #services-explore .cs-item {
     list-style: none;
     width: 100%;
@@ -523,8 +531,8 @@
     position: relative;
     z-index: 1;
   }
-  #services-explore .cs-item:hover .cs-picture img {
-    filter: blur(12px) brightness(0.5);
+  #services-explore .cs-item:hover {
+    transform: scale(1.05);
   }
   #services-explore .cs-item:hover .cs-item-text {
     opacity: 1;

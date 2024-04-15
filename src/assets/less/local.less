@@ -387,7 +387,7 @@
 
 
 /*-- -------------------------- -->
-<---         Portfolio           -->
+<---        Featured Portfolio           -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
@@ -455,7 +455,7 @@
 
     #services-341 .cs-picture {
         width: 100%;
-        height: 15rem;
+        height: 20rem;
         /* 16px - 24px */
         border-radius: 20px;
         /* clips the img tag corners */
@@ -515,11 +515,19 @@
         width: calc(43.3333% - 1.33333rem);
     }
 
+    #services-341 .cs-picture {
+        height: 13rem;
+    }
+
 }
 
 @media only screen and (min-width: 64rem) {
     #services-341 .cs-item {
         width: calc(33.3333% - 1.33333rem);
+    }
+
+    #services-341 .cs-picture {
+        height: 15rem;
     }
 
     #services-341 .cs-picture img {
@@ -532,27 +540,16 @@
         font-size: var(--topperFontSize);
         font-family: neue-montreal-regular;
         position: absolute;
-        margin: 1rem 1rem;
         top: 0;
         left: 0;
         box-sizing: border-box;
         opacity: 0;
         transition: 0.5s ease;
         z-index: 10;
-        background-color: rgba(232, 229, 228, 0.5);
+        background-color: var(--headerColor);
         border-radius: 100px;
         letter-spacing: 1px;
         padding: 0.5rem 1rem;
-    }
-
-    #services-341 .cs-item {
-        list-style: none;
-        width: 100%;
-        max-width: 25rem;
-        border-radius: 20px;
-        position: relative;
-        z-index: 1;
-        transition: 0.3s ease;
     }
 
     #services-341 {
@@ -563,13 +560,10 @@
             border-radius: 20px;
             position: relative;
             z-index: 1;
+            transition: 0.3s ease;
 
             &:hover {
-                .cs-picture {
-                    img {
-                        filter: blur(5px) brightness(0.5);
-                    }
-                }
+                transform: scale(1.05);
 
                 .cs-item-text {
                     opacity: 1;

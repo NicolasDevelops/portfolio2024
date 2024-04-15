@@ -16,7 +16,7 @@ webLink: https://www.apple.com
 date: 2024-04-06T23:03:00.000Z
 tags:
   - post
-image: https://picsum.photos/1920/1080
+image: /assets/images/blog/3-88.png
 imageAlt: pops
 ---
 > Skip to main contentTurn off continuous scrolling

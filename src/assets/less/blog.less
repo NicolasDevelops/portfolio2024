@@ -154,7 +154,7 @@
 
     #services-341 .cs-picture {
         width: 100%;
-        height: (340/16rem);
+        height: 12rem;
         /* 16px - 24px */
         border-radius: 20px;
         /* clips the img tag corners */
@@ -214,7 +214,7 @@
         min-width: 40rem;
     }
     #services-341 .cs-picture {
-        height: (400/16rem);
+        height: 23rem;
     }
 }
 
@@ -225,7 +225,6 @@
 
     #services-341 .cs-picture img {
         border-radius: 20px;
-        filter: blur(0) brightness(1);
         transition:  .3s ease;
     }
 
@@ -234,17 +233,16 @@
         font-size: var(--topperFontSize);
         font-family: neue-montreal-regular;
         position: absolute;
-        margin: 1rem 1rem;
         top: 0;
         left: 0;
         box-sizing: border-box;
         opacity: 0;
-        transition: .5s ease;
         z-index: 10;
-        background-color: rgba(232, 229, 228, 0.5);
+        background-color: var(--headerColor);
         border-radius: 100px;
         letter-spacing: 1px;
         padding: .5rem 1rem;
+        transition: .5s ease;
     }
 
     #services-341 .cs-item {
@@ -257,11 +255,7 @@
         transition: 0.3s ease;
 
         &:hover {
-            .cs-picture {
-                img {
-                    filter: blur(12px) brightness(0.5);
-                }
-            }
+            transform: scale(1.02);
 
             .cs-item-text {
                 opacity: 1;
@@ -578,11 +572,12 @@
             border-radius: 20px;
             position: relative;
             z-index: 1;
+            transition: 0.3s ease;
         }
 
         .cs-picture {
             width: 100%;
-            height: 15rem;
+            height: 12rem;
             /* 16px - 24px */
             border-radius: 20px;
             /* clips the img tag corners */
@@ -601,7 +596,6 @@
             width: 100%;
             object-fit: cover;
             transition:  0.3s ease;
-            filter: blur(0) brightness(1);
         }
     }
 }
@@ -615,13 +609,24 @@
         .cs-item {
             width: calc(43.3333% - 1.33333rem);
         }
+        .cs-picture {
+            height: 12rem;
+        }
     }
 }
 
 @media only screen and (min-width: 64rem) {
+    
+    #services-explore .cs-picture img {
+        border-radius: 20px;
+        transition: .3s ease;
+    }
 
 
     #services-explore {
+        .cs-picture {
+            height: 15rem;
+        }
         .cs-item {
             list-style: none;
             width: 100%;
@@ -630,11 +635,7 @@
             position: relative;
             z-index: 1;
             &:hover {
-                .cs-picture {
-                    img {
-                        filter: blur(12px) brightness(0.5);
-                    }
-                }
+                transform: scale(1.05);
 
                 .cs-item-text {
                     opacity: 1;
