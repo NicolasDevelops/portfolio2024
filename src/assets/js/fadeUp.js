@@ -18,5 +18,12 @@ const observer = new IntersectionObserver(entries => {
 // Adds DOMContentLoaded to make sure elements have been loaded in the DOM.
 window.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.section.fadeUp');
-  sections.forEach(section => observer.observe(section));
+  sections.forEach(section => {
+    section.classList.add('section'); // Add the 'section' class
+    observer.observe(section);
+  });
+
+  // Apply the 'fadeUp' class dynamically after initial content loading
+  const contentElement = document.querySelector("#hero-1426");
+  contentElement.classList.add("fadeUp");
 });
