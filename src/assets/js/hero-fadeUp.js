@@ -1,31 +1,29 @@
 // Intersection Observer API FadeUp Animation for Hero Section 
 // + Lazy loading mechanism to avoid render delay.
 
-// Sets the observer's options
-const HeroObserverOptions = {
-  threshold: 0.1 // Adjust the threshold as per your requirement
-};
+// Lazy load the script by delaying its execution until after initial content loading
+window.addEventListener('load', () => {
+  // Sets the observer's options
+  const heroObserverOptions = {
+    threshold: 0.1 // Adjust the threshold as per your requirement
+  };
 
-// Creates observer to the target (section) to add the in-view class to the section element when we want to intersect.
-const HeroObserver = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('heroInView');
-      HeroObserver.unobserve(entry.target);
-    }
-  });
-}, HeroObserverOptions);
-
-// Adds DOMContentLoaded to make sure elements have been loaded in the DOM.
-window.addEventListener('DOMContentLoaded', () => {
-  // Lazy load the script by delaying its execution until after initial content loading
-  setTimeout(() => {
-    const sections = document.querySelectorAll('.heroSection.heroFadeUp');
-    sections.forEach(section => {
-      HeroObserver.observe(section);
-      
-      // Apply the 'heroInView' class dynamically after initial content loading
-      section.classList.add("heroInView");
+  // Creates observer to the target (section) to add the in-view class to the section element when we want to intersect.
+  const heroObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('heroInView');
+        heroObserver.unobserve(entry.target);
+      }
     });
-  }, 0); // Delay execution to ensure other critical tasks are completed first
+  }, heroObserverOptions);
+
+  // Query and observe hero sections after page load
+  const sections = document.querySelectorAll('.heroFadeUp');
+  sections.forEach(section => {
+    heroObserver.observe(section);
+
+    // Apply the 'heroInView' class dynamically after initial content loading
+    section.classList.add('heroInView');
+  });
 });
