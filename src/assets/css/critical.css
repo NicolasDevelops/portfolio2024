@@ -1,4 +1,15 @@
 /* STYLES FOR ABOVE THE FOLD */
+.fadeUp {
+  transform: translateY(40px);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+.in-view {
+  transform: none;
+  opacity: 1;
+}
 /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
