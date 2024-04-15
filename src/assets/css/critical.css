@@ -58,15 +58,6 @@
     color: var(--headerColor);
     position: relative;
   }
-  #hero-1426 .cs-button2 {
-    background-color: #fff;
-    color: var(--headerColor);
-    transition: 0.3s ease;
-    border: transparent solid 1px;
-  }
-  #hero-1426 .cs-button2:hover {
-    border: var(--headerColor) solid 1px;
-  }
 }
 @media only screen and (min-width: 40rem) {
   #hero-1426 .cs-content {
