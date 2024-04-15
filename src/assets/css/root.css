@@ -69,6 +69,16 @@ html hr {
     border-radius: 100px;
     padding: 0.5rem 1rem;
   }
+  .cs-title {
+    font-family: "neue-montreal-medium", Arial, sans-serif;
+    font-size: var(--headerFontSize);
+    line-height: 1.2em;
+    letter-spacing: -0.2px;
+    text-align: inherit;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+  }
   .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
