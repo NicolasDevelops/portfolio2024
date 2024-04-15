@@ -58,32 +58,6 @@
     color: var(--headerColor);
     position: relative;
   }
-  #hero-1426 .cs-button-group {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  #hero-1426 .cs-button-solid {
-    font-size: 0.9rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-    text-decoration: none;
-    font-weight: 700;
-    color: #fff;
-    padding: 0 2.14285714rem;
-    background-color: var(--headerColor);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    transition: background-color 0.3s;
-    border-radius: 100px;
-    width: 11rem;
-  }
-  #hero-1426 .cs-button-solid:hover {
-    background-color: #fff;
-    color: var(--headerColor);
-  }
   #hero-1426 .cs-button2 {
     background-color: #fff;
     color: var(--headerColor);
