@@ -479,7 +479,7 @@ html hr {
         transform: translateX(150%);
         transition: transform 1s ease, opacity 1s ease;
         transition-delay: 0s;
-        /* Initial delay */
+
     }
 
     #cs-navigation .cs-li:nth-child(5) {
@@ -579,6 +579,12 @@ html hr {
             display: none !important;
         }
     }
+
+    #cs-navigation {
+        .cs-li-link:nth-child(3) {
+            
+        }
+    }
 }
 
 /*-- -------------------------- -->
@@ -588,7 +594,7 @@ html hr {
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     body.scroll #cs-navigation {
-        max-width: 52rem;
+        max-width: 53rem;
         .cs-li-link {
             min-width: 10rem;
         }
@@ -600,7 +606,7 @@ html hr {
 
     #cs-navigation {
         width: 100%;
-        max-width: 33rem;
+        max-width: 38rem;
         height: 3.5rem;
         box-sizing: border-box;
         /* 12px - 24px */
@@ -654,8 +660,7 @@ html hr {
         display: flex;
         justify-content: center;
         align-items: center;
-        /* 20px - 36px */
-        gap: .3rem
+        gap: .5rem;
     }
 
     #cs-navigation .cs-li {
@@ -677,7 +682,7 @@ html hr {
         display: block;
         position: relative;
         padding: .7rem 0;
-        min-width: 6rem;
+        min-width: 7rem;
         border-radius: 100px;
         transition:
             color .3s ease,
@@ -696,31 +701,6 @@ html hr {
         box-shadow: rgba(89, 95, 100, 0.1) 0px 4px 12px;
     }
 
-    #cs-navigation .cs-button-solid {
-        /* 46px - 56px */
-        line-height: clamp(2.875em, 5.5vw, 2.5em);
-        text-align: center;
-        text-decoration: none;
-        min-width: 7rem;
-        margin: 0;
-        /* prevents padding from adding to the width */
-        box-sizing: border-box;
-        padding: 0rem;
-        color: var(--headerColor) !important;
-        background-color: transparent;
-        display: inline-block;
-        position: relative;
-        z-index: 1;
-        transition: 0.3s;
-        border-radius: 100px;
-        font-weight: normal;
-        border: none;
-    }
-
-    #cs-navigation .cs-button-solid:hover {
-        // color: var(--bodyTextColorWhite) !important;
-        // background-color: #000;
-    }
 }
 
 /* Large Desktop - 1300px */
