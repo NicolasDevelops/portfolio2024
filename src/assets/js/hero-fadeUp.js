@@ -1,4 +1,5 @@
-// Intersection Observer API FadeUp Animation
+// Intersection Observer API FadeUp Animation for Hero Section 
+// + Lazy loading mechanism to avoid render delay.
 
 // Sets the observer's options
 const HeroObserverOptions = {
@@ -21,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   sections.forEach(section => {
     HeroObserver.observe(section);
     
-    // Apply the 'fadeUp' class dynamically after initial content loading
+    // Apply the 'heroInView' class dynamically after initial content loading
     section.classList.add(".heroInView");
   });
 });
