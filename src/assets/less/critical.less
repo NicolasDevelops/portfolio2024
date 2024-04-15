@@ -2,19 +2,39 @@
 
 // Fade up sections using Intersection Observer
 
-.heroFadeUp {
-    transform: translateY(40px);
+/* Add fade-up animation to the hero section */
+// .heroFadeUp {
+//     transform: translateY(40px);
+//     opacity: 0;
+//     transition-property: transform, opacity;
+//     transition-duration: 1s;
+//     transition-timing-function: ease;
+// }
+
+// /* Remove transform and opacity to reveal the section */
+// .heroInView {
+//     transform: none;
+//     opacity: 1;
+// }
+
+/* Define keyframe animation for fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Apply the animation to the hero section */
+#hero-1426 {
     opacity: 0;
-    transition-property: transform, opacity;
-    transition-duration: 1s;
-    transition-timing-function: ease;
+    animation: fadeIn 1s ease forwards;
 }
-
-.heroInView {
-    transform: none;
-    opacity: 1;
-}
-
 /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
