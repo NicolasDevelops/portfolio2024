@@ -20,8 +20,5 @@ window.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.section.fadeUp');
   sections.forEach(section => {
     observer.observe(section);
-    
-    // Apply the 'fadeUp' class dynamically after initial content loading
-    section.classList.add("fadeUp");
   });
 });
