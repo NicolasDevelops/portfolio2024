@@ -138,7 +138,7 @@
 
     #services-341 .cs-item {
         list-style: none;
-        width: 100%;
+        width: 20rem;
         max-width: (500/16rem);
         border-radius: 20px;
         position: relative;
@@ -169,7 +169,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            object-fit: cover;
+            object-fit:contain;
             transition:
                 transform 0.8s;
         }
@@ -401,9 +401,9 @@
         }
 
         .projectInfo {
-            max-width: 80%;
+            max-width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             padding: 50px 0;
         }
 
@@ -484,6 +484,7 @@
             overflow: hidden;
             display: block;
             position: relative;
+            
 
             img {
                 width: 100%;
@@ -497,6 +498,7 @@
                 max-height: clamp(25rem, 60vw, 30rem);
                 /* Adjust as needed */
                 border-radius: 15px;
+                
             }
         }
     }
@@ -508,7 +510,6 @@
         .cs-gallery {
                     grid-template-columns: 1fr 1fr;
                     gap: 1.25rem;
-                    /* Adjust as needed */
         }
 
         .cs-image {
@@ -518,6 +519,10 @@
                 width: 100%;
                 object-fit: cover;
                 border-radius: 15px;
+                transition: .3s ease;
+                &:hover {
+                    transform: scale(1.05);
+                }
             }
         }
     }
@@ -567,7 +572,7 @@
 
         .cs-item {
             list-style: none;
-            width: 100%;
+            width: 23rem;
             max-width: 31.25rem;
             border-radius: 20px;
             position: relative;
@@ -594,7 +599,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            object-fit: cover;
+            object-fit:contain;
             transition:  0.3s ease;
         }
     }
