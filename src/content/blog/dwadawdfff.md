@@ -8,12 +8,14 @@ technologies:
   - HTML5
   - CSS3
   - Javascript
-overview: I worked with Propeller to design their brand identity and design
-  language. The name Propeller was inspired by the companies overall objective —
-  to propel great business ideas. The identity was designed with this very
-  objective in mind. The logomark is formed from a propeller shape to create a
-  unique letter P. In addition to the brand I also worked with Propeller to
-  develop their product interface as well as their website visuals.
+overview: Welcome to my showcase of web development prowess. Crafted with pure
+  CSS, HTML, and JavaScript, this portfolio website epitomizes my commitment to
+  accessibility and mobile-centric design. Every pixel is optimized for seamless
+  performance, ensuring a delightful experience across devices. With a laser
+  focus on responsiveness, this platform showcases my array of projects with
+  finesse. Itt achieves top marks, boasting a flawless 100% on Google's speed
+  test. Explore, engage, and witness the power of thoughtful design and
+  meticulous execution.
 webLink: https://www.ortizwebworks.com
 date: 2024-04-20T18:03:00.000Z
 tags:
