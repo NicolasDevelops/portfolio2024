@@ -8,7 +8,7 @@ technologies:
   - HTML5
   - CSS3
   - Javascript
-overview: Welcome to my showcase of web development prowess. Crafted with pure
+overview: Welcome to my showcase of web development portfolio. Crafted with pure
   CSS, HTML, and JavaScript, this portfolio website epitomizes my commitment to
   accessibility and mobile-centric design. Every pixel is optimized for seamless
   performance, ensuring a delightful experience across devices. With a laser
