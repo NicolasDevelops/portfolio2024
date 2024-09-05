@@ -1,5 +1,5 @@
 ---
-title: Ortiz Web Works - Portfolio
+title: Ortiz Web Works
 description: This exact portfolio website
 author: fwaffff
 company: Ortiz Web Works
