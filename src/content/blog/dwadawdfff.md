@@ -3,7 +3,7 @@ title: Ortiz Web Works
 description: This exact portfolio website
 author: fwaffff
 company: Ortiz Web Works
-role: Web Developer
+role: Web Developer & Web Designer
 technologies:
   - HTML5
   - CSS3
