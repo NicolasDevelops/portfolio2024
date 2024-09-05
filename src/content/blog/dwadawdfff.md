@@ -13,7 +13,7 @@ overview: Welcome to my showcase of web development portfolio. Crafted with pure
   accessibility and mobile-centric design. Every pixel is optimized for seamless
   performance, ensuring a delightful experience across devices. With a laser
   focus on responsiveness, this platform showcases my array of projects with
-  finesse. Itt achieves top marks, boasting a flawless 100% on Google's speed
+  finesse. It achieves top marks, boasting a flawless 100% on Google's speed
   test. Explore, engage, and witness the power of thoughtful design and
   meticulous execution.
 webLink: https://www.ortizwebworks.com
